@@ -1,0 +1,29 @@
+Christopher Addison (cjteam)
+William Cao (pastor13)
+David Dupre (djdupre)
+Jared Le (jaredtle)
+Christine Ta (cta95)
+
+Track Forever - Team Status Report (Week 2)
+
+LAST WEEK'S GOALS
+	N/A
+
+PROGRESS
+	During week two, we established our team members and initial project idea. Our group name is “Track Forever”. Our project aims to future-proof issue trackers. We’ve set up most of the tools needed for our work this quarter, including:
+
+	- Messenger group chat for communication
+	- Github repository
+	- Shared Google drive for documents
+	- CSE mailing list (CSE support pending) 
+
+	We’ve also established our team’s weekly availability for group meetings. At the bare minimum, we plan to meet Tuesday and Thursday mornings.
+
+	Beyond tools and scheduling, we’ve also discussed which tools and frameworks we want to utilize to build our project and the resultant functionality we hope to achieve using them.  
+
+NEXT WEEK'S GOALS
+	As a team, our goals for the next week are:
+	- Conduct more research about the problem
+	- Solidify end goal for what we want the project to achieve in terms of features and functionality
+	- Decide on a platform for the client and the server
+	- Flesh out initial project proposal, rewrite as necessary, add more defined mockups

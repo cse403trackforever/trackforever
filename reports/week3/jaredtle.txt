@@ -1,0 +1,21 @@
+Jared Le (jaredtle)
+Status Report Week 3
+2018-04-09
+
+LAST WEEK'S GOALS:
+	N/A
+
+PROGRESS:
+	After week 2's meetings, I began familiarizing myself with Kotlin, which has been 
+	established as our language of choice for manipulating text when importing and 
+	exporting issues. In addition, I spent time over the weekend researching Redmine,
+	another common issue tracker than we can likely add support for fairly rapidly. I
+	worked with William to help build out the comparison between the various issue trackers,
+	and I've been discussing how best to store the data with him. However, I would like to 
+	finalize this design over the next week in a larger group meeting.
+
+NEXT WEEK'S GOALS:
+	- Design the format we'll be using to store issues
+	- Begin skeleton-ing the backend that will interface between the various issue converters
+	- Meet with team members who are beginning to write converters, find out what they need from
+		the backend, and what they can provide.

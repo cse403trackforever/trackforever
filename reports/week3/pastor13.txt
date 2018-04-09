@@ -1,0 +1,28 @@
+William Cao (pastor13)
+CSE 403
+Individual Status Report
+04-09-2018
+
+1st Week of Individual Status Reports
+
+
+I've done some research the several major issue trackers and their exports. I drafted a spreadsheet with a table that showed the fields listed in 
+each issue trackers export files according to their Restful API. Something I've noticed is that many of the issue trackers contain field names that 
+are not shared with other issue trackers even though some of the fields do essentially the same thing, such as description vs summary. Another thing 
+I noticed was the different implementations of a ranking system for issues, such as a star/rating system compared to a severity level with a description 
+like (low/high). A problem that is present from these observations is figuring a way to map all these different or similar fields into our own unified 
+file format. Furthermore, I had to think about the way Track Forever will export this data. For instance, I thought about exporting a file with more 
+generic fields, which would be easier to implement but also more problematic if the field names do not match exactly with the field names of an issue 
+tracker that is importing such a file. A better but more practical solution would be to create classes/methods that will export specifically for an 
+issue tracker. By exporting specifically, I mean the program will use field names that are specific to that issue tracker. Another issue that I've 
+noticed is parsing the different types of files that are exported from the various issue trackers. For instance, some issue trackers support .json 
+while others support .csv or .xml. For every different file type, our team would need to create a class or method to parse the information from there. 
+Adding on to this, when parsing such files, due to the potentially different field names, we may have to figure out what fields to ignore/drop and which 
+fields we have to map to our own. It is helpful after looking at all these potential problems, so I can help figure out what should be in the design of our API contract that our backend will use to interact with the webapp. As of now, I am stuck on organizing all these different file types with 
+different fields from these different issue trackers.
+
+Once I am done organizing, I can determine what classes/methods I need to prototype for an issue tracker. A goal I have for the end of next Monday is to 
+have a working prototype for extracting and parsing a bug/issue from an issue tracker like YouTrack, Google Code, or GitHub. If it happens that I finish 
+prototyping one of the issue trackers, I will try and prototype a second issue tracker with a similar file that we have to parse (like another issue 
+tracker that exports to .json or .csv). If my teammates have covered some of the other popular issue trackers, I would focus on figuring out how to grab 
+a large amount of issues to test with the working prototype that I had finished.

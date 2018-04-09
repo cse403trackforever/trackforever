@@ -1,0 +1,16 @@
+Christopher Addison - cjteam
+
+Track Forever - Individual Status Report (Week 3)
+
+LAST WEEK'S GOALS
+    N/A
+
+PROGRESS
+    In week three I met up with the team three times for one hour or more meetings. In the latest one, the team and I agreed to make Christine the PM for the project. She since has created a sprint chart for assigning tasks and keeping track of progress. Our first set of goals includes interpreting the api of two different issue trackers. For that I volunteered to handle parsing GitHub's api.
+    As a team we discussed out strengths, weaknesses, and what we would like to do. As a team of five, two chose to work on the backend and two chose to work on the frontend. To balance things out I decided to take on a support role and help whichever subteam requires the most assistance for a coming week and to ensure there is an interface between them.
+    In terms of coding output, I created the project in our repository, began structuring the code, and wrote some example json parsing to help my teammates understand Kotlin. Due to the design of Kotlin, parsing json api's is much easier to write and extend.
+
+GOALS
+    In the coming week the goal is to meet with my team at least twice and ensure that everyone is supported and assigned a task for the coming week.
+    I, personally, intend to complete the GitHub api parsing such that a team and project name can be given and all associated issues will be fetched.
+    Another focus will be on working with the team to decide a format for our representation of issues. We, as a team, intend to complete the design on this within week 4.

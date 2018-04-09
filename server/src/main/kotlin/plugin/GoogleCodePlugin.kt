@@ -2,6 +2,7 @@ package plugin
 
 import com.beust.klaxon.Klaxon
 import plugin.structures.GoogleCodeIssueStructure
+import plugin.structures.GoogleCodeProjectStructure
 import java.net.URL
 
 class GoogleCodePlugin(projectName: String): Plugin {
@@ -16,6 +17,12 @@ class GoogleCodePlugin(projectName: String): Plugin {
         val issue = Klaxon().parse<GoogleCodeIssueStructure>(url.openStream())
 
         println(issue)
+
+        // get project
+        val projectUrl = URL("$urlTemplate/project.json")
+        println(projectUrl.openStream().bufferedReader().use { it.readText() })
+        val project = Klaxon().parse<GoogleCodeProjectStructure>(projectUrl.openStream())
+        println(project)
 
 
         // TODO: return our data structure

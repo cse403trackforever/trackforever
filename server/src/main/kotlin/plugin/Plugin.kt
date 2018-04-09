@@ -9,5 +9,5 @@ interface Plugin {
     fun export()
 
     // TODO: add pass through testing method to avoid http requests when testing
-    // fun testImport()
+    fun testImport()
 }

@@ -7,7 +7,7 @@ data class GoogleCodeCommentStructure(
         val commenterId: Long,
         val content: String,
         val timestamp: Int,
-        private val attachments: Array<GoogleCodeAttachmentStructure> = emptyArray()
+        val attachments: Array<GoogleCodeAttachmentStructure> = emptyArray()
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true

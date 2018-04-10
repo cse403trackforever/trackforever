@@ -5,23 +5,41 @@ import plugin.structures.GitHubCommentStructure
 import plugin.structures.GitHubIssueStructure
 import java.net.URL
 
-class GitHubPlugin(ownerName: String, projectName: String): Plugin {
-    private val urlTemplate = "https://api.github.com/repos/$ownerName/$projectName"
+class GitHubPlugin(ownerName: String? = null, projectName: String? = null): Plugin {
+
+    /**
+     * This is the extra constructor to handle json input
+     */
+    constructor(issuesJson: String, arrayCommentsJson: Array<String>) : this() {
+        this.issuesJson = issuesJson
+        this.arrayCommentsJson = arrayCommentsJson
+    }
+
+    private val url: URL? = if (ownerName is String && projectName is String) {
+        URL("https://api.github.com/repos/$ownerName/$projectName/issues")
+    } else {
+        null
+    }
+    private var issuesJson = ""
+    private var arrayCommentsJson = emptyArray<String>()
 
     override fun import() {
-        val issuesUrl = URL("$urlTemplate/issues")
-        val issues = Klaxon().parseArray<GitHubIssueStructure>(issuesUrl.openStream()) ?: emptyList()
-        issues.forEach {
-            val comments = Klaxon().parseArray<GitHubCommentStructure>(URL(it.commentsUrl).openStream()) ?: emptyList()
+        val issues = if (url is URL) {
+            Klaxon().parseArray(url.openStream())
+        } else {
+            Klaxon().parseArray<GitHubIssueStructure>(issuesJson)
+        } ?: emptyList()
+
+        issues.withIndex().forEach {
+            val comments = if (url is URL) {
+                Klaxon().parseArray(URL(it.value.commentsUrl).openStream())
+            } else {
+                Klaxon().parseArray<GitHubCommentStructure>(arrayCommentsJson[it.index])
+            } ?: emptyList()
             println(it)
             println(comments)
         }
 
         // TODO: create all the necessary structures to support this
     }
-
-    override fun export() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
 }

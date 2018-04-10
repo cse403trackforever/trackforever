@@ -6,19 +6,43 @@ import plugin.structures.GoogleCodeIssuesPageStructure
 import plugin.structures.GoogleCodeProjectStructure
 import java.net.URL
 
-class GoogleCodePlugin(projectName: String) : Plugin {
+class GoogleCodePlugin(private val projectName: String? = null) : Plugin {
     private val archiveUrlTemplate = "https://storage.googleapis.com/google-code-archive/v2/code.google.com/$projectName"
-    private val attachementsUrlTemplate = "https://storage.googleapis.com/google-code-attachments/$projectName"
+    private val attachmentsUrlTemplate = "https://storage.googleapis.com/google-code-attachments/$projectName"
+    private var projectJson = ""
+    private var issuesJson = ""
+    private var arrayCommentsJson = emptyArray<String>()
+    private var arrayIssuesJson = emptyArray<String>()
 
-    fun getIssues(): Array<GoogleCodeIssueStructure> {
+    /**
+     * This is the extra constructor to handle json input
+     */
+    constructor(
+            projectJson: String,
+            issuesJson: String,
+            arrayCommentsJson: Array<String>,
+            arrayIssuesJson: Array<String>
+    ) : this() {
+        this.projectJson = projectJson
+        this.issuesJson = issuesJson
+        this.arrayCommentsJson = arrayCommentsJson
+        this.arrayIssuesJson = arrayIssuesJson
+
+    }
+
+    private fun getIssues(): Array<GoogleCodeIssueStructure> {
         val issues = mutableListOf<GoogleCodeIssueStructure>()
 
         var i = 1 // pages are 1-indexed
         var numPages: Int
         do {
-            // get next issues page
-            val pageUrl = URL("$archiveUrlTemplate/issues-page-$i.json")
-            val issuesPage = Klaxon().parse<GoogleCodeIssuesPageStructure>(pageUrl.openStream()) ?: break
+            val issuesPage = if (projectName is String) {
+                // get next issues page
+                val pageUrl = URL("$archiveUrlTemplate/issues-page-$i.json")
+                Klaxon().parse<GoogleCodeIssuesPageStructure>(pageUrl.openStream())
+            } else {
+                Klaxon().parse<GoogleCodeIssuesPageStructure>(issuesJson)
+            } ?: break
             numPages = issuesPage.totalPages
 
             // pull issues from page
@@ -31,21 +55,30 @@ class GoogleCodePlugin(projectName: String) : Plugin {
         return issues.toTypedArray()
     }
 
-    fun getIssue(issueNum: Int): GoogleCodeIssueStructure? {
-        // get issue
-        // url format https://storage.googleapis.com/google-code-archive/v2/code.google.com/hg4j/issues-50.json
+    /**
+     * Get individual issue
+     */
+    private fun getIssue(issueNum: Int) = if (projectName is String) {
         val url = URL("$archiveUrlTemplate/issues/issue-$issueNum.json")
-        return Klaxon().parse<GoogleCodeIssueStructure>(url.openStream())
+        Klaxon().parse<GoogleCodeIssueStructure>(url.openStream())
+    } else {
+        Klaxon().parse<GoogleCodeIssueStructure>(arrayIssuesJson[issueNum])
     }
 
+
     fun getAttachmentUrl(issueNum: Int, commentNum: Int, filename: String): String {
-        return "$attachementsUrlTemplate/issue-$issueNum/comment-$commentNum/$filename"
+        return "$attachmentsUrlTemplate/issue-$issueNum/comment-$commentNum/$filename"
     }
 
     override fun import() {
         // get project
-        val projectUrl = URL("$archiveUrlTemplate/project.json")
-        val project = Klaxon().parse<GoogleCodeProjectStructure>(projectUrl.openStream())
+        val project = if (projectName is String) {
+            val projectUrl = URL("$archiveUrlTemplate/project.json")
+            Klaxon().parse<GoogleCodeProjectStructure>(projectUrl.openStream())
+        } else {
+            Klaxon().parse<GoogleCodeProjectStructure>(projectJson)
+        }
+
         println(project)
 
         // get issues
@@ -53,9 +86,5 @@ class GoogleCodePlugin(projectName: String) : Plugin {
         issues.forEach { println(it) }
 
         // TODO: return our data structure
-    }
-
-    override fun export() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

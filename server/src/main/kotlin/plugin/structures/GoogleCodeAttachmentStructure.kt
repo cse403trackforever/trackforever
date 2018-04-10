@@ -1,7 +1,7 @@
 package plugin.structures
 
 data class GoogleCodeAttachmentStructure(
-        val id: Int,
+        val id: Long,
         val fileName: String,
         val fileSize: Int
 )

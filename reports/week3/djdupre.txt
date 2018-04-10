@@ -1,0 +1,26 @@
+David Dupre (djdupre)
+CSE 403
+Individual Status Report
+4/9/18
+
+# Last Week's Goals
+N/A
+
+# Progress
+In the first half of the last week I worked on bringing new team members up to
+speed and writing the second proposal. I addressed feedback from the original
+proposal by recognizing the problem of merging the content of different issue
+trackers. I also researched the popularity of different issue trackers to begin
+to decide which ones to pursue and what elements we should include in our file
+format. I learned from the new proposal feedback that this research should be
+more concretely represented.
+  After the proposal, I expanded on some early work by Christopher to parse the
+Google Code Archive JSON API. I am learning Kotlin and finding the JSON parsing
+easy to implement. However, there are some problems with Google Code's schema,
+in particular an inconsistency between documentation and reality.
+
+# Next Week's Goals
+- Participate in deciding a file format using knowledge of Google Code's schema
+- Help decide on the backend system architecture
+- Prototype code to convert Google Code's issues to our decided upon format
+- Write unit tests for Google Code issue parsing

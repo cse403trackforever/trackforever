@@ -1,27 +1,26 @@
 package plugin
 
 import com.beust.klaxon.Klaxon
+import plugin.api.GitHubAPI
+import plugin.api.GitHubDefaultAPI
 import plugin.structures.GitHubCommentStructure
 import plugin.structures.GitHubIssueStructure
-import java.net.URL
 
-class GitHubPlugin(ownerName: String, projectName: String): Plugin {
-    private val urlTemplate = "https://api.github.com/repos/$ownerName/$projectName"
+class GitHubPlugin(
+        ownerName: String,
+        projectName: String,
+        private val api: GitHubAPI = GitHubDefaultAPI(ownerName, projectName)
+): Plugin {
 
     override fun import() {
-        val issuesUrl = URL("$urlTemplate/issues")
-        val issues = Klaxon().parseArray<GitHubIssueStructure>(issuesUrl.openStream()) ?: emptyList()
+        val issues = Klaxon().parseArray<GitHubIssueStructure>(api.issues) ?: emptyList()
+
         issues.forEach {
-            val comments = Klaxon().parseArray<GitHubCommentStructure>(URL(it.commentsUrl).openStream()) ?: emptyList()
+            val comments = Klaxon().parseArray<GitHubCommentStructure>(api.fetchComments(it.number)) ?: emptyList()
             println(it)
             println(comments)
         }
 
         // TODO: create all the necessary structures to support this
     }
-
-    override fun export() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
 }

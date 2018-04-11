@@ -1,41 +1,22 @@
 package plugin
 
 import com.beust.klaxon.Klaxon
+import plugin.api.GitHubAPI
+import plugin.api.GitHubDefaultAPI
 import plugin.structures.GitHubCommentStructure
 import plugin.structures.GitHubIssueStructure
-import java.net.URL
 
-class GitHubPlugin(ownerName: String? = null, projectName: String? = null): Plugin {
-
-    /**
-     * This is the extra constructor to handle json input
-     */
-    constructor(issuesJson: String, arrayCommentsJson: Array<String>) : this() {
-        this.issuesJson = issuesJson
-        this.arrayCommentsJson = arrayCommentsJson
-    }
-
-    private val url: URL? = if (ownerName is String && projectName is String) {
-        URL("https://api.github.com/repos/$ownerName/$projectName/issues")
-    } else {
-        null
-    }
-    private var issuesJson = ""
-    private var arrayCommentsJson = emptyArray<String>()
+class GitHubPlugin(
+        ownerName: String,
+        projectName: String,
+        private val api: GitHubAPI = GitHubDefaultAPI(ownerName, projectName)
+): Plugin {
 
     override fun import() {
-        val issues = if (url is URL) {
-            Klaxon().parseArray(url.openStream())
-        } else {
-            Klaxon().parseArray<GitHubIssueStructure>(issuesJson)
-        } ?: emptyList()
+        val issues = Klaxon().parseArray<GitHubIssueStructure>(api.issues) ?: emptyList()
 
-        issues.withIndex().forEach {
-            val comments = if (url is URL) {
-                Klaxon().parseArray(URL(it.value.commentsUrl).openStream())
-            } else {
-                Klaxon().parseArray<GitHubCommentStructure>(arrayCommentsJson[it.index])
-            } ?: emptyList()
+        issues.forEach {
+            val comments = Klaxon().parseArray<GitHubCommentStructure>(api.fetchComments(it.number)) ?: emptyList()
             println(it)
             println(comments)
         }

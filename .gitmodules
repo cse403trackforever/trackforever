@@ -1,3 +1,4 @@
 [submodule "server"]
 	path = server
 	url = https://github.com/cse403trackforever/server
+	branch = master

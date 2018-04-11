@@ -1,0 +1,34 @@
+Christopher Addison (cjteam)
+William Cao (pastor13)
+David Dupre (djdupre)
+Jared Le (jaredtle)
+Christine Ta (cta95)
+
+Track Forever - Team Status Report (Week 3)
+
+Last week’s goals
+	As a team,
+	- Conduct more research about the problem
+	- Solidify end goal for what we want the project to achieve in terms of features and functionality
+	- Decide on a platform for the client and the server
+	- Flesh out initial project proposal, rewrite as necessary, add more defined mockups
+
+Progress
+	This week, we’ve began revising our project proposal based on staff feedback and the next proj3 assignment spec. 
+	David and Chris have looked into the format and retrieval of Google Code and GitHub issues. As part of this 
+	investigation, the two have produced code which parses issues from both sources when given the project name. 
+	With the help of WIlliam, they added test hooks to allow for testing data to be used in the test suite for these parsers. 
+	Chris spent Wednesday splitting the repository in two with the parsing code being placed in a separate repository and 
+	linked to the main one via git submodules. This change allows us to require code reviews before any changes are made. 
+	As a team, we’ve white boarded the system architecture and we’re working on the unified  format of our issue tracker. 
+	By Thursday night, we will have an architecture and implementation plan (proj3), which will include the web app UI 
+	design and architecture diagrams.
+
+Week 4 goals
+	During week 4, we plan to begin implementation. This includes -
+
+	Create the conversion tool for two bug trackers to our own format
+	Implement the UI of the web app using dummy bug entries
+	Research tools to allow offline support for our web app (i.e. a service worker)
+
+	We haven’t finished breaking down and delegating tasks for the next week, but it will be on our shared scrum board by the end of the week.

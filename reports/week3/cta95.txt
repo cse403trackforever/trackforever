@@ -6,20 +6,19 @@ LAST WEEK'S GOALS
 	N/A
 
 PROGRESS
-	During week two, we established our team members and initial project idea. Our group name is “Track Forever”. Our project aims to future-proof issue trackers. We’ve set up most of the tools needed for our work this quarter, including:
-
-	- Messenger group chat for communication
-	- Github repository
-	- Shared Google drive for documents
-	- CSE mailing list (CSE support pending) 
-
-	We’ve also established our team’s weekly availability for group meetings. At the bare minimum, we plan to meet Tuesday and Thursday mornings.
-
-	Beyond tools and scheduling, we’ve also discussed which tools and frameworks we want to utilize to build our project and the resultant functionality we hope to achieve using them.  
-
-NEXT WEEK'S GOALS
-	As a team, our goals for the next week are:
-	- Conduct more research about the problem
-	- Solidify end goal for what we want the project to achieve in terms of features and functionality
-	- Decide on a platform for the client and the server
-	- Flesh out initial project proposal, rewrite as necessary, add more defined mockups
+Since the last week, I've worked with my team members to complete our second project proposal.
+I volunteered to take on a PM role to help keep our team stay organized and on track with our schedule.
+I created a simple scrum board on our Google drive as a spreadsheet. We took our week three schedule
+and turned them into tasks and assigned them accordingly. My teammates and I are going to try to
+use it for this week and see if it's useful for our team progress or not. (The board is in our Shared
+Google drive, if the staff would like to give us any feedback on it or tips in general about planning, 
+it'd be much appreciated)
+ 
+GOALS
+This week, my individual tasks / goals are
+	- Design the UI for our web app
+	- Lead the team status report and turn it in
+	- Prepare our weekly schedule for the next week
+	- Work with my teammates to create an agenda for Thursday's TA meeting
+	- Work with my teammates to design the backend architecture of our project
+	- Help with this week's deliverable (project 3)

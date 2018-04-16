@@ -1,0 +1,18 @@
+Christopher Addison - cjteam
+
+Track Forever - Individual Status Report (Week 4)
+
+LAST WEEK'S GOALS
+    In the coming week the goal is to meet with my team at least twice and ensure that everyone is supported and assigned a task for the coming week.
+    I, personally, intend to complete the GitHub api parsing such that a team and project name can be given and all associated issues will be fetched.
+    Another focus will be on working with the team to decide a format for our representation of issues. We, as a team, intend to complete the design on this within week 4.
+
+PROGRESS
+    In week four I met up with the team three times for one hour or more meetings. In these meetings we discussed our roadmap and development policies. Early in the week I discussed and implemented submodules in our repos to allow us to use branch policies on our code. From now on all changes must be done via pull requests that have at least one review. I made sure at each meeting that everyone was assigned work and everyone had the support they needed. The support came in the form of answering questions, clarifying concerns, and performing code review for pull requests.Overall, I am very happy with the cohesion within the team and the progress we are making.
+    Personally, I helped finish the structure and representation for storing our format of issues. David, William, and I found the largest subset of supported subfields and used those when writing the representation. I started and finished the GitHub api parsing and in addition I also added the translation into our representation too. David handled the Google Code parsing and William did the translation into the Track Forever structure. The use of kotlin has significantly sped up this process. The plugin api has specifically been designed to allow for easy use and testing.
+
+GOALS
+    In the coming week the goal is to meet with my team at least twice and ensure that everyone is supported and assigned a task for the coming week.
+    Enhance the tests for the GitHub plugin in a manner that mirrors the style of the tests William created for Google Code.
+    Start work on deciding the api between the front and back end with the goal of being as expressive as possible while also keeping it as narrow as possible.
+    Discuss how to persist data on the back and front end.

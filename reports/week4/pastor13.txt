@@ -1,0 +1,40 @@
+William Cao (pastor13)
+CSE 403
+Individual Status Report
+04-16-2018
+
+2nd Week of Individual Status Reports
+
+Once I am done organizing, I can determine what classes/methods I need to prototype for an issue tracker. A goal I have for the end of next Monday is 
+to have a working prototype for extracting and parsing a bug/issue from an issue tracker like YouTrack, Google Code, or GitHub. If it happens that I 
+finish prototyping one of the issue trackers, I will try and prototype a second issue tracker with a similar file that we have to parse (like 
+another issue tracker that exports to .json or .csv). If my teammates have covered some of the other popular issue trackers, I would focus on 
+figuring out how to grab a large amount of issues to test with the working prototype that I had finished.
+
+The first thing I did this week was learn the basics of Kotlin. It took some getting used to at first, even though the syntax is very similar to Java.
+After figuring out the basics of Kotlin, I sat down with Christopher to work on outlining the plugins for Google Code and GitHub. A few days after,
+I helped write the Google Code plugin for our project. I implemented the portion of the plugin that trasnfers the existing Google Code project 
+information, including issues, over to our own Track Forever classes that stores the project information. Overall, I learned a lot about the Kotlin 
+language this week. I enjoy writing in it as it is very flexible and contains helpful things like nullables built into the language. I had some 
+trouble thinking about how the Google Code plugin was going to port from the format given by Google Code. For instance, the Google Code project 
+structure does not actually contain any of the issues. The issues have to be fetched separately in the form of issue pages. Those issue pages contain 
+an array of issue summaries and not issues (which contain attachments). As of now, we are not choosing to deal with attachments, but if we were to 
+handle attachments with Google Code in the future, we would most likely have to make additional adjustments for parsing those attachments. Another 
+slight problem that I ran into while coding the plugin was setting the ID for the ported project. The Google Code information only contained a project 
+name, so we decided it would be okay to use the name as ID as long as it was unique (as it should). Furthermore, there were other fields that our 
+Track Forever data classes contained such as time created, updated, and closed - all of which was not information that was retrievable by Google Code.
+Thus, we had to set these fields to an agreed value (such as -1). Another problem that I ran into was setting the submitter name for the issue. Again, 
+Google Code did not have an exact one to one match for it. To elaborate, the submitter ID provided by Google Code is a number that is only consistent 
+across a specific issue, which somewhat defeats the whole point of the submitter name. As a result, we decided to settle this issue by setting all 
+submitter names from Google Code as "Anonymous". As of now, one of the biggest problems is figuring out how to test this current implementation out 
+with existing Google Code projects. This is a problem because of how difficult it is to pull information from projects without knowing their project 
+names. As far as I know right now, there is not a method to get a list of existing project names from Google Code. Furthermore, to make things more 
+complex, some of the JSON data files stored in the Google Code archives no longer exist or were never actually backed up.
+
+I think we are slightly ahead of schedule in terms of implementation. Because of this, for next week, I want to focus more on refining the plugin to 
+iron out any existing bugs. Obviously, this requires a lot of extensive testing which in turn requries a lot of project data that needs to be pulled 
+from the Google Code archives. Because of this need, I want to figure out a way to get a lot of data without manually searching through the archives 
+for projects to test our plugin with. If I do manage to get these goals done, the next step would be to help test or implement the other issue 
+trackers like Redmine or GitHub.
+
+

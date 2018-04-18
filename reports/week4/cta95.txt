@@ -1,0 +1,24 @@
+Christine Ta (cta95)
+
+Track Forever - Individual Status Report (Week 4)
+
+LAST WEEK'S GOALS
+	- Design the UI for our web app
+	- Lead the team status report and turn it in
+	- Prepare our weekly schedule for the next week
+	- Work with my teammates to create an agenda for Thursday's TA meeting
+	- Work with my teammates to design the backend architecture of our project
+	- Help with this week's deliverable (project 3)
+
+PROGRESS
+Since the last status report, I've mainly been working with my team to complete the architecture
+and implementation plan assignment. I helped with creating the architecture diagram and the UI design
+for the web app. I've also helped with the presentation slides. I also helped with planning, which
+included leading the team status report and getting an agenda ready for our meeting with Martin.
+ 
+GOALS
+This week, my individual tasks / goals are
+	- Work with David to design the contracts for the API that our web app will be calling
+	- Work with David to implement the web UI
+	- Help with week 4 deliverables (proj4)
+	- Lead team status report and prepare agenda for Thursday's TA meeting

@@ -1,0 +1,32 @@
+David Dupre (djdupre)
+CSE 403
+Individual Status Report
+4/16/18
+
+# Last Week's Goals
+- Participate in deciding a file format using knowledge of Google Code's schema
+- Help decide on the backend system architecture
+- Prototype code to convert Google Code's issues to our decided upon format
+- Write unit tests for Google Code issue parsing
+
+# Progress
+In the last week I did help decide on the file format and committed the Kotlin
+representation of that format to the repository (pull request here:
+https://github.com/cse403trackforever/server/pull/2/files).
+  I did help decide on the backend system architecture which is now diagrammed
+in the last project proposal. I also researched offline database technologies
+and decided to use IndexedDB.
+  I did not accomplish my goals related to Google Code because those tasks were
+handed off to William and Christopher. I instead set up the front-end framework
+of Track Forever using Angular and bootstrap css. The code has not yet been
+reviewed but it includes a service to eventually pull mock issues from local
+files and eventually from our RESTful API.
+  I cannot make much more progress on the front-end until the team agrees on
+the interface between the web app and the server, which we will decide
+tomorrow.
+
+# Next Week's Goals
+- Help design the API contracts between web app and backend
+- Identify what Angular components are required to implement our design based
+  on the UI mockup
+- Implement Angular services to consume our API and inject it with mock data

@@ -1,0 +1,26 @@
+Jared Le (jaredtle)
+Status Report Week 4
+2018-04-16
+
+LAST WEEK'S GOALS:
+	- Design the format we'll be using to store issues
+	- Begin skeleton-ing the backend that will interface between the various issue converters
+	- Meet with team members who are beginning to write converters, find out what they need from
+		the backend, and what they can provide.
+
+
+
+PROGRESS:
+	We were able to begin implementing our chosen format for storing issues in our issue tracker. I've mostly
+	been learning from Chris, as he is the one most experienced with Kotlin and our particular backend setup.
+	While I did meet with the team a bit, I was unfortunately unable to perform much work over the weekend
+	due to family commitments.
+	
+	We were, however, able to get the basic outline for our plugins in line. I plan to finish the redmine
+	plugin implementation I was doing as practice in Kotlin, along with any other tasks assigned to me this
+	week by the team.
+
+NEXT WEEK'S GOALS:
+	- Meet with team to figure out how we'll be storing this issues (database, if so what kind, etc.)
+	- Finish initial issue tracker plugins, start thinking and discussing ways to test them.
+	- Potentially work with Chris on writing API, user guide

@@ -1,0 +1,34 @@
+Christopher Addison (cjteam)
+William Cao (pastor13)
+David Dupre (djdupre)
+Jared Le (jaredtle)
+Christine Ta (cta95)
+
+Track Forever - Team Status Report (Week 4)
+
+Last week’s goals
+
+	During week 4, we plan to begin implementation. This includes -
+
+	- Create the conversion tool for two bug trackers to our own format
+	- Implement the UI of the web app using dummy bug entries
+	- Research tools to allow offline support for our web app (i.e. a service worker)
+
+
+Progress
+	During week 4, we’ve begun shifting from designing to implementation. For the backend, 
+	two plugins were completed (Google Code and GitHub) and work was made towards persisting 
+	the results via MongoDB - a structural database management system. Work was also done 
+	towards providing a test suite for the Google Code plugin with offline JSON files from 
+	projects pulled from the Google Code archives. For the web app, we’ve defined the sitemap 
+	and the UI design. We’ve also designed the API that our web app will call. We mocked this 
+	API for the front-end but only one component has been implemented so far, with more coming 
+	by the end of this week. As far as assignments, we’ve done our project presentation slides 
+	and we’re working on completing the user manual. Also, we’ve spent time revising the metrics 
+	section of the project proposal so we now have a more concrete way of measuring the project’s success.
+
+Week 5 goals
+	- Finish a conversion tool for at least one more bug tracker
+	- Complete the addition of data persistence on the backend 
+	- Implement the REST API for interfacing between the webapp and back end
+	- Implement offline support in web app such that the page remains even after refresh

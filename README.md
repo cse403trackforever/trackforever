@@ -1,5 +1,7 @@
 # Track Forever
 
+[User manual](https://github.com/cse403trackforever/trackforever/blob/master/reports/week4/UserManual.md)
+
 Clone repository and all submodules via:
 ```
 git clone --recursive https://github.com/cse403trackforever/trackforever.git

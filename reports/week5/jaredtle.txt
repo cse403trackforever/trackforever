@@ -1,0 +1,22 @@
+Jared Le (jaredtle)
+Status Report Week 5
+2018-04-23
+
+LAST WEEK'S GOALS:
+	- Meet with team to figure out how we'll be storing this issues (database, if so what kind, etc.)
+	- Finish initial issue tracker plugins, start thinking and discussing ways to test them.
+	- Potentially work with Chris on writing API, user guide
+
+PROGRESS:
+	Following a major pivot on the scope and design of our project, our priorities need readjustment.
+	I spent a good portion of my time last week working on the user manual, ensuring that our design
+	was settled. Fortunately, Christine was able to assist with the diagramming.
+	
+	Much of our previous work, however, will need to be redone in JavaScript (specifically TypeScript), so
+	that has been the team focus for a while now. I have been reading through tutorials and guides in order
+	to get my own skills up to speed for this task.
+
+NEXT WEEK'S GOALS:
+	- Make sure user manual is continually updated to reflect the current processes
+	- Assist with porting older conversion code to javascript
+	- Begin working on server code, which up until now has been conceptual at best

@@ -1,0 +1,29 @@
+David Dupre (djdupre)
+CSE 403
+Individual Status Report
+4/23/18
+
+# Last Week's Goals
+- Help design the API contracts between web app and backend
+- Identify what Angular components are required to implement our design based
+  on the UI mockup
+- Implement Angular services to consume our API and inject it with mock data
+
+# Progress
+Christine and I created the initial design for the API here:
+https://github.com/cse403trackforever/trackforever/wiki/RESTful-API-Specification
+We decided to postpone the authentication aspect of the API and focus on the
+core functionality. The API is also missing some features which we decided to
+add in the last week (e.g. synchronization).
+  I added some high-level Angular components and routing to give the web app
+some structure so we can start working on the separate pages in parallel. One
+difficulty I had was deciding on the folder structure for the project as there
+are many different correct ways to do it in Angular.
+  I did implement an Angular service to take our initial API and use mock data.
+After our decision to move issue tracker conversions to the web app, I also
+created an import module to help make that transition.
+
+# Next Week's Goals
+- Set up continuous integration for the front-end
+- Update and add unit tests to existing components and services
+- Implement the offline database

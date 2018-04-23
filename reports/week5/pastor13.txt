@@ -1,0 +1,25 @@
+William Cao (pastor13)
+CSE 403
+Individual Status Report
+04-23-2018
+
+3rd Week of Individual Status Reports
+
+I think we are slightly ahead of schedule in terms of implementation. Because of this, for next week, I want to focus more on refining the plugin to 
+iron out any existing bugs. Obviously, this requires a lot of extensive testing which in turn requries a lot of project data that needs to be pulled 
+from the Google Code archives. Because of this need, I want to figure out a way to get a lot of data without manually searching through the archives 
+for projects to test our plugin with. If I do manage to get these goals done, the next step would be to help test or implement the other issue 
+trackers like Redmine or GitHub.
+
+This week was a bit more interesting than the others. It turns out that TaskWarrior had a decent user interface, which removes one of its downsides.
+After such a discovery, we had to talk about our future plans. This week, I helped work on the user manual and helped iron out some of the functionality 
+of our reworked issue tracker. We decided that our porting tools for issue trackers will have to be moved to the client side rather than the server.
+As a result, I had to start translating the Google Code plugin which was written in Kotlin to TypeScript. I am not familiar with TypeScript so this 
+transition is going to take some time getting used to, something we don't have much of since we're now on a more tight schedule than before. Before all
+this, I helped revise the metric portion of our project proposal since that was lacking. The biggest problem that is causing me trouble is the transition
+of moving our porting tools to the client side because this requires a lot of restructuring of our project which includes a language change and also
+the removal of a lot of the data classes we had written in Kotlin.
+
+My priority goal this week is to work on porting the Google Code plugin to TypeScript and making sure that it passes the existing tests that we had 
+written for them in Kotlin. After the port, the other goal I have is to work with the front end team members to establish the REST API between our 
+web app and back end. Again, from last week, I need to find a good way to pull Google Code projects to test out the plugin extensively.

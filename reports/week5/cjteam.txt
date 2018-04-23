@@ -1,0 +1,19 @@
+Christopher Addison - cjteam
+
+Track Forever - Individual Status Report (Week 5)
+
+LAST WEEK'S GOALS
+    In the coming week the goal is to meet with my team at least twice and ensure that everyone is supported and assigned a task for the coming week.
+    Enhance the tests for the GitHub plugin in a manner that mirrors the style of the tests William created for Google Code.
+    Start work on deciding the api between the front and back end with the goal of being as expressive as possible while also keeping it as narrow as possible.
+    Discuss how to persist data on the back and front end.
+
+PROGRESS
+    In week five I met up with the team three times and some major changes to our project structure were decided during these times. Following feedback from Professor Ernst, We decided to shift our focus away from the backend and towards the front end instead. The import functions are now run on the client side and the backend becomes just a simple storage system to allow for collaboration between team members. This will differentiate our project from Task Warrior. To handle the offline/online functionality, the client will hold a copy of the issues and synchronizes them with the server via a git like merge interface. This allows offline issues to be mutable. This week as part of the pivot I ported across our two plugins to Typescript so they can run on the front end. The rest of the time was spent organising with the team to ensure we all understood what needs to be done, especially with the large changes we had made.
+
+GOALS
+    Add a third plugin for importing issues
+    Create a revision system to allow for issues to be merged when collaborating
+    Continue discussion with the team to ensure we are all on the same sheet and any issues that crop up from our pivot get resolved quickly.
+    Meet with the team at least twice in the coming week
+    Continue work on deciding the api between the front and back end with the goal of being as expressive as possible while also keeping it as narrow as possible.

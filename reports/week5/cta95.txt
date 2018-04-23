@@ -1,0 +1,21 @@
+Christine Ta (cta95)
+
+Track Forever - Individual Status Report (Week 5)
+
+LAST WEEK'S GOALS
+	- Work with David to design the contracts for the API that our web app will be calling
+	- Work with David to implement the web UI
+	- Help with week 4 deliverables (proj4)
+	- Lead team status report and prepare agenda for Thursday's TA meeting
+
+PROGRESS
+Since the last status report, I've worked with David to work on implementing the web app.
+I also helped with week four deliverables (user manual). I'm mainly focusing on the frontend
+work for our project and am hoping to finish most of implementation this week.
+
+GOALS
+This week, my individual tasks / goals are
+	- Finish web app implementation
+		- Add authentification feature
+	- Help with deliverables (build and test, proposal)
+	- Lead team status report for Wednesday

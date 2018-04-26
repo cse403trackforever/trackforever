@@ -1,0 +1,40 @@
+Christopher Addison (cjteam)
+William Cao (pastor13)
+David Dupre (djdupre)
+Jared Le (jaredtle)
+Christine Ta (cta95)
+
+Track Forever - Team Status Report (Week 5)
+
+
+Goals
+	Initial goals
+		Finish a conversion tool for at least one more bug tracker
+		Complete the addition of data persistence on the backend 
+		Implement the REST API for interfacing between the webapp and back end
+		Implement offline support in web app such that the page remains even after refresh
+
+	Modified goals
+		Translate the two existing conversion tools (Github and Google Code) to Typescript
+		Finish a conversion tool for one more bug tracker
+		Refine web app UI
+		Implement authentication
+		Implement the REST API for interfacing between the webapp and back end
+		Update tests and set up CI process
+		Ensure that automated test suite is operational and integrated into build system and CI process
+		Revise project proposal
+		
+	Progress
+		This week we had some shifts in our project. We’ve decided to do the conversion on the client-side. Because of this, we had to move some of our existing code for our plugins from the back end to the web app. Since we decided to do so, we could no longer use Kotlin and switched to using Typescript. [Discuss other design decisions we made]
+
+		For the web app, we’ve implemented the UI for the most part. There is a home page containing a list of projects, a project page, and an issue page. We have an import page that contains a form for Github and Google Code projects. We still need to do JSON. We are also still working on the authentication feature.
+
+		A problem we are still dealing with is getting the JSON files from Google Code using Typescript. A header field from the requested data is missing so the local server can’t retrieve it. Since we do not have control of the Google Code servers, we can’t apply some workarounds that we have researched. Also, we have thought about using a proxy to modify the header, but we decided that it would not be a good idea. Another solution we have thought about is using another open source project that solves this cross origin issue, but that seems more than necessary to just add an additional header field.
+
+		For assignments, we are revising our proposal based on feedback and making changes to our user manual as we continue implementing our project. We’ve also set up continuous integration for our project.
+
+	Week 6 goals
+		Configure web app to call API and display bug entries
+		Implement offline support in web app such that the page remains even after refresh
+		Revise user manual to accommodate for any potential changes
+		Revise project proposal

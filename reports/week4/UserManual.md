@@ -123,16 +123,14 @@ To create a new import/export module, follow the guide [here](https://guide.com)
 ## Other Information
 
 ### Authors
-Track Forever is an educational project created during the Spring of 2018 by the following students at the University of Washington:
-* Christopher Addison (cjteam)
-* William Cao (pastor13)
-* David Dupre (djdupre)
-* Jared Le (jaredtle)
-* Christine Ta (cta95)
+Track Forever is a project created by the following people:
+* [Christopher Addison](https://github.com/cjteam123)
+* [William Cao](https://github.com/WilliamCao13)
+* [David Dupre](https://github.com/djdupre)
+* [Jared Le](https://github.com/jaredtle)
+* [Christine Ta](https://github.com/christineta)
 
-For more information, visit:
-- The [GitHub page](https://github.com/cse403trackforever/trackforever)
-- The [Course page](https://courses.cs.washington.edu/courses/cse403/)
+For more information, visit the [GitHub page](https://github.com/cse403trackforever/trackforever)
 
 
 ### Running the Test Suite

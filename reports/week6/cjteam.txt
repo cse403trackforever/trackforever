@@ -1,0 +1,23 @@
+Christopher Addison - cjteam
+
+Track Forever - Individual Status Report (Week 6)
+
+LAST WEEK'S GOALS
+    Add a third plugin for importing issues
+    Create a revision system to allow for issues to be merged when collaborating
+    Continue discussion with the team to ensure we are all on the same sheet and any issues that crop up from our pivot get resolved quickly.
+    Meet with the team at least twice in the coming week
+    Continue work on deciding the api between the front and back end with the goal of being as expressive as possible while also keeping it as narrow as possible.
+
+
+PROGRESS
+    Last week my major code contributions was in enhancing the interface from the backend to the frontend to make it more expressive, but maintain its independence to avoid over coupling that could hinder development.
+    With David I helped put together the tests and the CI tester for our repository.
+    I did a lot of code review for the team ensuring that each pull request was checked and approved in a timely fashion.
+    In positive news we discovered a project that allows for a CORS proxy server and found an actively maintained one hosted by the creator. For security reasons any traffic we send via the proxy we will need to enforce the HTTPS protocol. This will allow the two plugins with this issue to work.
+
+GOALS
+    Implement the CORS proxy fix such that the two of three plugins experiencing the issue will work.
+    Solidify and architect the conflict, merge, and revision system
+    Being work on the server client interface and api.
+    Work with the frontend/ui group to ensure that the architecture of the system remains solid

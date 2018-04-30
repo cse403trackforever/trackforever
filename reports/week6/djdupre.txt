@@ -1,0 +1,25 @@
+David Dupre (djdupre)
+CSE 403
+Individual Status Report
+4/23/18
+
+# Last Week's Goals
+- Set up continuous integration for the front-end
+- Update and add unit tests to existing components and services
+- Implement the offline database
+
+# Progress
+Last week I set up continuous integration for the front-end. After the
+assignment was due I also added deployment to our CI so our current build of
+master can be demoed here: https://cse403trackforever.github.io/webapp/
+  After setting up CI, I updated our unit tests from the auto-generated ones
+to minimal passing test suites. This opened the path for others to add unit
+tests.
+  I added an offline database using localForage and IndexedDB. This led to some
+major modularization of our import module, which should make it easier to add
+support for more issue trackers.
+
+# Next Week's Goals
+- Update the web app to switch between online/offline modes
+- Update the architecture plan to include CORS proxy
+- Rewrite the report's competitors section in response to feedback

@@ -4,6 +4,8 @@
 
 [User manual](https://github.com/cse403trackforever/trackforever/blob/master/reports/week4/UserManual.md)
 
+[Demo](https://cse403trackforever.github.io/webapp/)
+
 Clone repository and all submodules via:
 ```
 git clone --recursive https://github.com/cse403trackforever/trackforever.git

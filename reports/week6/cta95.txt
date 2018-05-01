@@ -1,0 +1,20 @@
+Christine Ta (cta95)
+
+Individual status report week 6
+
+LAST WEEK'S GOALS
+	- Web app implementation
+	- Add authentication feature
+	- Help with deliverables
+
+PROGRESS
+Since the last status report, I've been helping my team with assignments and the
+implementation of the web app. I've used bootstrap to style the pages into a 
+consistent design. I've added authentication using Firebase. Currently, I've only
+got Facebook auth configured, but will be doing Github and email as well. 
+
+GOALS
+	- Add email and Github authentication
+	- Ensure all pages get redirected as needed if unauthenticated
+	- Continue refining the web UI
+	- Help with team deliverables

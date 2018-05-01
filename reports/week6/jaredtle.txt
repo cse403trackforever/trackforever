@@ -1,0 +1,18 @@
+Jared Le (jaredtle)
+Status Report Week 5
+2018-04-30
+
+LAST WEEK'S GOALS:
+	- Make sure user manual is continually updated to reflect the current processes
+	- Assist with porting older conversion code to javascript
+	- Begin working on server code, which up until now has been conceptual at best
+
+PROGRESS:
+	I was out for part of the week due to illness and midterms, but was able to catch up on progress with my team.
+	We discovered an issue with accessing certain APIs using JavaScript, but DJ and the others appear
+	to have found a solution. I will do what I can to assist.
+
+NEXT WEEK'S GOALS:
+	- Test and implement CORS solution.
+	- Revise the user manual and project proposal (again)
+	- Assist with implementing the offline server module. Will likely defer to William and Chris

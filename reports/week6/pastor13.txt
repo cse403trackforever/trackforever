@@ -1,0 +1,28 @@
+William Cao (pastor13)
+CSE 403
+Individual Status Report
+04-30-2018
+
+4th Week of Individual Status Reports
+
+My priority goal this week is to work on porting the Google Code plugin to TypeScript and making sure that it passes the existing tests that we had 
+written for them in Kotlin. After the port, the other goal I have is to work with the front end team members to establish the REST API between our 
+web app and back end. Again, from last week, I need to find a good way to pull Google Code projects to test out the plugin extensively.
+
+I helped revise the project proposal last week, specifically addressing the justification of our rubrics. I also helped work on the progress portion of 
+the team status report. During this time, I've been working on the Redmine conversion tool. This was a change of plans from my goal from last week 
+because Christopher had already finished porting both the GitHub and Google Code plugins to TypeScript, so I figured I could help get the third plugin
+up and running. Unfortunately, after I finished implementing the prototype for the plugin, I ran into the same cross origins issue that is still 
+plaguing us from the Google Code plugin. As of now, I think we need to sit down and address this issue as a team because I fear it may be more than 
+just these two plugins at this rate. Also, a potential issue with the Redmine plugin is that the projects may be hosted on another server, so I might 
+need to adjust the base URL that I hardcoded into the plugin currently. It might require some user input as to where the project is located, but I think
+that should be okay. Unfortunately, I still have not found a good way to test the current plugins yet, as I'm not still not particularly comfortable 
+with TypeScript. I have also tried to address the security vulnerability in my branch by updating the Hoek version to the recommended 4.2.1 by GitHub. 
+I have not merged the branch with master yet, and I have not found a way to see if the vulnerability still exists in my branch. Lastly, I helped revise 
+the user manual and adjust it according to the feedback received from last week. I also moved the license to a completely different file as suggested
+from the feedback.
+
+As for next week, there are many goals that I should work on. I need to help with testing our current plugins and work on ironing out the details of 
+the API between the server and web app. Also, I should focus on implementing offline support for the web app, as this is a crucial part of the project.
+Another big goal for next week is how we deal with the cross origins problem with Google Code and Redmine. If this all gets done, I will try and see if 
+I can help out my teammates working with the front end.

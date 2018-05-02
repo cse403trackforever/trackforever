@@ -1,0 +1,35 @@
+Christopher Addison (cjteam)
+William Cao (pastor13)
+David Dupre (djdupre)
+Jared Le (jaredtle)
+Christine Ta (cta95)
+
+Track Forever - Team Status Report (Week 6)
+
+
+Last Week Goals
+- Update proposal for project 6 deliverable
+- Implement authentication feature
+- Implement offline feature
+- Continue refining web UI
+- Revise user manual as necessary
+- Add support for a third plugin
+
+
+Progress
+
+This week we continue with implementation. The UI and pages have been revised by Christine to have a welcome page and sign in page component to
+accommodate for user authentication. Authentication works for Facebook and we will also be adding Github and email. 
+Chris refined the UI to ensure a clean experience across all device sizes. William added a third plugin for importing issues from Redmine and 
+Chris found a work-around to mitigate the CORS issue we encountered this week. Meanwhile, David has made significant work towards making our website
+a true PWA with offline support and dynamic online/offline switching. Jared continued work refining our project proposal, filling in a number of
+missing areas, clarifying the explicit details as to how our product goes above and beyond our competitors, and enhancing the clarity of our
+motivation, architecture, and metrics sections. 
+
+Week 6 goals
+- List plans and goals as bullets, who’s responsible, rollover any tasks from last week that didn’t get completed
+- Configuration page component
+- Continue refining web UI
+- Build framework to allow for collaborative online and offline functionality
+- Enhance the existing test suite to boost code coverage
+- Add import plugin for Task Warrior

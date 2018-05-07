@@ -1,0 +1,24 @@
+Christine Ta (cta95)
+
+Individual status report week 7
+
+LAST WEEK'S GOALS
+	- Add email and Github authentication
+	- Ensure all pages get redirected as needed if unauthenticated
+	- Continue refining the web UI
+	- Help with team deliverables
+
+PROGRESS
+Since the last report, I've assisted my team with revising our proposal and user manual.
+I've added Github authentication. I still need to configure email and all of the other
+smaller features needed (i.e. separate sign up and sign in / such as forgetting password). 
+I've added code to ensure users aren't able to access pages when they aren't signed in.
+I've also added a new landing / welcome page for when the user first acccesses our page
+without being signed in. I hope to add more information about our project and website to it.
+
+GOALS
+	- Email authentication
+	- Unit tests
+	- Help with team deliverables
+	- Help with front end implementation as needed
+

@@ -1,0 +1,23 @@
+Christopher Addison - cjteam
+
+Track Forever - Individual Status Report (Week 6)
+
+LAST WEEK'S GOALS
+    Implement the CORS proxy fix such that the two of three plugins experiencing the issue will work.
+    Solidify and architect the conflict, merge, and revision system
+    Being work on the server client interface and api.
+    Work with the frontend/ui group to ensure that the architecture of the system remains solid
+
+
+PROGRESS
+    Last week my major code contributions was in helping David enhance the test suite to bring our coverage up to ~80%
+    In progress changes I have waiting in a branch I have architected the revision system and setup the API to interface between the front and back end.
+    Before the changes are merged, more tests will be needed, hooks for ui need to be added, and the PR will need to be cleaned up as it contains many off topic changes.
+    In the coming few days I hope to have fixed these issues with the help of the team and merge the changes!
+
+GOALS
+    Add tests for the revision system
+    Cleanup the revision PR and get it merged into the master branch
+    Begin work on a merge ui for revisions
+    Ensure team remains consistent and on track
+    Help backend implement the API

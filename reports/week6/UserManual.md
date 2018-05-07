@@ -45,8 +45,8 @@ Open the web app in a browser by connecting to `https://localhost/4200`.
 #### Using the Web App
 
 ##### Authentication
-- Sign into a Track Forever account
-- An account can be created using an email, Facebook, Google, Twitter, or GitHub account
+- Sign into your Track Forever account
+- An account can be created using email, Facebook, or Github
 
 ##### Configuring Your Profile
 - A user may set their password, picture, and preferences
@@ -58,7 +58,8 @@ Open the web app in a browser by connecting to `https://localhost/4200`.
 - Select the type of the new project (See the [Supported Trackers](#compatible-issue-trackers) section below) and follow the required steps to import the project
 
 ##### Viewing All Projects
-- Once signed in, the home page will display a list of all projects
+- Once signed in, you will be redirected to the My Projects page. This displays a list of all projects
+- Search and filters can be applied to narrow down your project search
 
 ##### Viewing a Project and Associated Issues
 - From the project list, select the relevant project

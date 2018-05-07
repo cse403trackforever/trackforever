@@ -1,0 +1,26 @@
+David Dupre (djdupre)
+CSE 403
+Individual Status Report
+5/7/18
+
+# Last Week's Goals
+- Update the web app to switch between online/offline modes
+- Update the architecture plan to include CORS proxy
+- Rewrite the report's competitors section in response to feedback
+
+# Progress
+I updated the web app to switch between online and offline modes based on the
+browser's onLine status and http errors. I also tried to make the app run
+entirely offline (cached) using service workers, but I'm running into trouble
+once it's deployed to GitHub Pages.
+  I did not update the architecture plan to include a CORS proxy because this
+part of our architecture is much simpler than I thought it would be.
+  I did go into some more detail about competitors, but not quite enough.
+  Most of my efforts with week actually went into writing unit tests. I wrote
+all the tests for the issue fetching services and most of the import service
+tests.
+
+# Next Week's Goals
+- Evaluate the conversion quality from one of the supported issue trackers
+- Add exporting to JSON
+- Add mutability of issues

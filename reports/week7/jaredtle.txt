@@ -1,0 +1,22 @@
+Jared Le (jaredtle)
+Status Report Week 7
+2018-05-07
+
+LAST WEEK'S GOALS:
+	- Test and implement CORS solution.
+	- Revise the user manual and project proposal (again)
+	- Assist with implementing the offline server module. Will likely defer to William and Chris
+
+PROGRESS:
+	We made significant changes to the project proposal, in grammer, message, and layout. Unfortunately, more 
+	have to be made based on the feedback we recieved. In addition, with another project coming up that will require
+	significant writing, which I will likely be doing a lot of. The project assignment for this is somewhat vague, so
+	I'll attempt to get some clarification before Thursday.
+	
+	Backend progress was pushed back to this week, due to unplanned work that had to be done on the version control.
+	The backend will be in Java most likely, so I'll be able to help more here.
+	
+NEXT WEEK'S GOALS
+	- Revise the user manual and project proposal (again)
+	- Figure out how on Earth we're going to measure and document project results
+	- Assist with implementing the offline server module. Will likely defer to William and Chris

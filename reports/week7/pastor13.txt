@@ -1,0 +1,21 @@
+William Cao (pastor13)
+CSE 403
+Individual Status Report
+05-07-2018
+
+5th Week of Individual Status Reports
+
+As for next week, there are many goals that I should work on. I need to help with testing our current plugins and work on ironing out the details of 
+the API between the server and web app. Also, I should focus on implementing offline support for the web app, as this is a crucial part of the project.
+Another big goal for next week is how we deal with the cross origins problem with Google Code and Redmine. If this all gets done, I will try and see if 
+I can help out my teammates working with the front end.
+
+We agreed to solve the cross origins problem by editing the URL to go through another server to handle the header. I helped edit bits of the user manual and the project proposal this week, specifically, the last portion of the motivation section and revised the schedule. Afterwards, I have been
+working on getting the offline portion of our project working. I am still trying to work with MongoDB and understanding the way it works and how I can
+interact with the GET, PUT, and POST requests that will be sent from our web app to the server. I think the most difficult portion of this is trying to
+use my previous knowledge of MySQL and use it with MongoDB. Obviously the commands to do the same thing are different, so that just takes time getting
+used to it.
+
+I want to finish implementing the offline portion of the server, so that is the primary goal of this week. Also, since we need to get the results in
+this Thursday, I plan to help out with the result generation process, which may include automating (and figuring out how to automate) as much as 
+possible.

@@ -1,0 +1,35 @@
+Christopher Addison (cjteam)
+William Cao (pastor13)
+David Dupre (djdupre)
+Jared Le (jaredtle)
+Christine Ta (cta95)
+Track Forever - Team Status Report (Week 7)
+
+Goals
+- Configuration page component
+- Build framework to allow for collaborative online and offline functionality
+- Enhance the existing test suite to boost code coverage
+- Implement offline support in web app such that the page remains even after refresh
+- Add Github and email support for authentication feature
+- Write tests to cover import functions
+- Revise user manual to match current UI functions
+- Revise project proposal to address given feedback
+
+Progress
+
+This week we made many changes to our motivation portion of the project proposal to address the feedback from Michael regarding the use cases. During 
+this week, we also enhanced our test suite by adding more tests that cover the plugins used for importing. In addition, we have also added an export 
+to json function. Coveralls were added to the GitHub repository, which helps us maintain steady code coverage as we add more to our project. 
+Further optimizations to the source code were made, including removal of some redundant models and refactoring of some data types. GitHub
+authentication has been added to the project (still testing). As of now, we are currently in the process of testing the implementation of hashes. 
+Also, we are working on gathering projects to use with our project for the preliminary results.
+
+
+Week 7 goals
+- List plans and goals as bullets, who’s responsible, rollover any tasks from last week that didn’t get completed
+- Add additional UI features such as a user settings page
+- Add email support for authentication feature
+- Implement the REST API for interfacing between the webapp and back end
+- Implement issue syncing and merging between frontend and backend  
+- Perform and record manual tests for issue conversion quality
+- Automate tests for other metrics (speed, browser support, etc.) 

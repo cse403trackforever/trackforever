@@ -5,7 +5,14 @@ Due to the nature of this project, generating a report requires manual evaluatio
 In order to generate results, projects must first be imported into Track Forever. The imported issues must then be compared against the original issues, to look for any missing information, improper rendering, or other issues that may arise. For each compared issue, a rubric is filled out and then added to a comma-separated-value file (CSV). Finally, the automated script tabulates the results and generates a report.
 
 ## Instructions for running the script
-TODO: FILL THIS OUT
+Requirements: Python 3.x.x, Latex Distribution
+Visit [this link](https://www.python.org/download/releases/3.0/) to download Python.
+Visit [this link](https://miktex.org/download) to download a Latex distribution.
+
+Afterwards, run **GenerateReport.py**.
+This will generate a file called **report.tex**.
+Either open this up in your Latex distribution and save it as a .PDF or convert it using pdflatex.exe located in *C:\Program Files\MiKTeX 2.9\miktex\bin\x64* if you are using Miktex on a 64-bit Windows installation.
+
 
 ## How to evaluate and record results
 Once issues for a particular project have been converted, they must be manually compared to the original. For each issue, 4 values must be determined (each between 0 and 1.0). 

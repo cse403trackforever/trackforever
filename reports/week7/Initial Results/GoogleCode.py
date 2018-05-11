@@ -64,6 +64,7 @@ def get_table(issue_tracker_name, project_name):
 	'\t\tIs the issue readable? & 1 & {0:.2f} \\\\\n'.format(category_scores[2] / len(issues)), 
 	'\t\\end{tabular}\n', 
 	'\\end{center}\n', 
+	'Total number of issues examined: {0} \\\\'.format(len(issues)),
 	'Final Score for issue tracker: {0:.2f} / {1:.2f} \\\\ \\\\'.format(final_sum / len(issues), sum(weights))]
 	return texTable
 

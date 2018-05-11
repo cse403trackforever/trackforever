@@ -9,7 +9,7 @@ Requirements: Python 3.x.x, Latex Distribution\
 Visit [this link](https://www.python.org/download/releases/3.0/) to download Python.\
 Visit [this link](https://miktex.org/download) to download a Latex distribution.
 
-Afterwards, run **GenerateReport.py**.\
+Afterwards, run **GenerateReport.py** located in the **Initial Results** directory.\
 This will generate a file called **report.tex**.\
 Either open this up in your Latex distribution and save it as a .PDF or convert it using **pdflatex.exe** located in ```C:\Program Files\MiKTeX 2.9\miktex\bin\x64\``` if you are using Miktex on a 64-bit Windows installation.
 

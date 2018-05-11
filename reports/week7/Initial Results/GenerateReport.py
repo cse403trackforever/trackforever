@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import GenericScore as gen_score
 import GoogleCode as code_score
 
@@ -64,4 +66,4 @@ for i in range(len(texdoc)):
 
 f.close()
 
-print(texdoc)
+# print(texdoc)

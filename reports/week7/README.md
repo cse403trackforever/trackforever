@@ -11,7 +11,7 @@ Visit [this link](https://miktex.org/download) to download a Latex distribution.
 
 Afterwards, run **GenerateReport.py**.\
 This will generate a file called **report.tex**.\
-Either open this up in your Latex distribution and save it as a .PDF or convert it using pdflatex.exe located in *C:\Program Files\MiKTeX 2.9\miktex\bin\x64* if you are using Miktex on a 64-bit Windows installation.
+Either open this up in your Latex distribution and save it as a .PDF or convert it using **pdflatex.exe** located in ```C:\Program Files\MiKTeX 2.9\miktex\bin\x64\``` if you are using Miktex on a 64-bit Windows installation.
 
 
 ## How to evaluate and record results

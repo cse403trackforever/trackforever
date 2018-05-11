@@ -5,13 +5,20 @@ Due to the nature of this project, generating a report requires manual evaluatio
 In order to generate results, projects must first be imported into Track Forever. The imported issues must then be compared against the original issues, to look for any missing information, improper rendering, or other issues that may arise. For each compared issue, a rubric is filled out and then added to a comma-separated-value file (CSV). Finally, the automated script tabulates the results and generates a report.
 
 ## Instructions for running the script
-Requirements: Python 3.x.x, Latex Distribution\
-Visit [this link](https://www.python.org/download/releases/3.0/) to download Python.\
-Visit [this link](https://miktex.org/download) to download a Latex distribution.
+0. Requirements: 
+* [Python 3.x.x](https://www.python.org/download/releases/3.0/)
+* [Latex Distribution](https://miktex.org/download) <br>
 
-Afterwards, run **GenerateReport.py** located in the **Initial Results** directory.\
-This will generate a file called **report.tex**.\
-Either open this up in your Latex distribution and save it as a .PDF or convert it using **pdflatex.exe** located in ```C:\Program Files\MiKTeX 2.9\miktex\bin\x64\``` if you are using Miktex on a 64-bit Windows installation.
+1. Run **GenerateReport.py** located in the **Initial Results** directory<br>
+* ```./GenerateReport.py``` if on Linux <br>
+* ```python GenerateReport.py``` if on Windows (if that doesn't work, try ```py -3 GenerateReport.py```) <br>
+*NOTE*: This assumes that you have the python PATH set correctly in your environment variables.
+
+2. This will generate a file called **report.tex**.
+3. Do one of the following: <br> 
+* Open this up in your Latex distribution and compile it. A file called **report.pdf** should be generated within the same directory.
+* Convert it using **pdflatex.exe** located in ```C:\Program Files\MiKTeX 2.9\miktex\bin\x64\``` if you are using Miktex on a 64-bit Windows installation. <br>
+Example: ```"C:\Program Files\MiKTeX 2.9\miktex\bin\x64\pdflatex.exe" report.tex```
 
 
 ## How to evaluate and record results
@@ -32,4 +39,7 @@ These numbers, along with the ID number for the issue they are associated with, 
 >
 > 1235,0,0,0,0
 
-This CSV file can then be passed to the script as detailed above.
+In **GenerateReport.py**, you must follow the format in the code and specify in the arguments on the relative file path to get to the directory that contains the *.csv* files. <br>
+In addition, you must specify the issue tracker name and project name in the *get_table* method. <br>
+The script will perform the calculations and generate a Latex file that represents the values in the *.csv* files. <br>
+**NOTE**: Improperly formatted data will not be parsed. Please refer to ```Initial Results/GitHub/Microsoft Dotnet/eval-dotnet.csv``` as an example.

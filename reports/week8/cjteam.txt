@@ -1,0 +1,22 @@
+Christopher Addison - cjteam
+
+Track Forever - Individual Status Report (Week 6)
+
+LAST WEEK'S GOALS
+    Add tests for the revision system
+    Cleanup the revision PR and get it merged into the master branch
+    Begin work on a merge ui for revisions
+    Ensure team remains consistent and on track
+    Help backend implement the API
+
+PROGRESS
+    A lot of this week was spent enhancing and improving our project proposal and writing our initial results for the project.
+    I split out and merged three of four PRs of the revision system which took a significant amount of time to bring to a merge-able state due to the large structural changes in places and breaking the Typescript type system via a misplaced parentheses. The final PR requires more tests to boost coverage before it can be merged.
+    William and I have planned our approach and tools for the rewrite of the backend and server.
+
+GOALS
+    Finish tests for the revision system then merge final PR
+    Begin work on a merge ui for revisions
+    Fix mobile ui for the fontend
+    Ensure team remains consistent and on track
+    Help backend implement the API

@@ -1,0 +1,25 @@
+William Cao (pastor13)
+CSE 403
+Individual Status Report
+05-14-2018
+
+6th Week of Individual Status Reports
+
+
+I want to finish implementing the offline portion of the server, so that is the primary goal of this week. Also, since we need to get the results in this Thursday, I plan to help out with the result generation process, which may include automating (and figuring out how to automate) as much
+as possible.
+
+I did not expect the report generation to take a good portion of the week. I helped come up with the format of the initial test results and 
+the kind of files that we will process. We ended up deciding on using .csv's for the data, with each test separated by a comma from a 
+scale of 0-1 for each category. The script that I wrote will account for the weights of each test. We also decided that we will use LateX as
+a way to generate the .pdf of the report. Before writing the script, I had helped find some projects that could be used in our initial results
+test for our project. After writing the script, I helped test a large Google Code project (over 1000 issues). During the import, I discovered
+that our project only imported one page of issues (100 consecutive issues). As a result, I could not randomly sample and expect to get 
+meaningful data (since we decided to count import failures as a score of 0). Because of this, I did two samples, one that just used all the 
+cases that were successfully imported and one that didn't. What was unique about the Google Code project (openbookproject) I selected was that 
+it was primarily in Chinese. It turns out our project did a very good job in preserving information when importing from Google Code. I did 
+notice that our webapp didn't import some underscores and one heading correctly, but overall did a good job preserving information. As of now,
+I am working on the presentation and project proposal.
+
+For next week, we need to get the prototype for the offline portion working, which I plan on working on. Afterwards, I need to work on getting
+Redmine to import correctly (it sees the requests for the .json, but we aren't getting anything back).

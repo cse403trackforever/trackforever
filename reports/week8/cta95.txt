@@ -1,0 +1,20 @@
+Christine Ta (cta95)
+
+Individual status report week 8
+
+LAST WEEK'S GOALS
+	- Email authentication
+	- Unit tests
+	- Help with team deliverables
+	- Help with front end implementation as needed
+
+PROGRESS
+Since the last report, I've assisted my team with revising our proposal, schedule, and
+helping with evaluations for our initial results assignment. I finished email auth. I've
+also added a user model and a user page component that shows user information.
+
+GOALS
+	- Filtering feature
+	- Bug fixes
+	- Presentation slides
+	- Proposal

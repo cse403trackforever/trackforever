@@ -10,19 +10,19 @@ LAST WEEK'S GOALS:
 
 PROGRESS:
 	Both the proposal and the initial results took a lot of work. However, we were able to make significant
-  revisions to the proposal, as well as create a process for documenting initial results. I did not have
-  as much time as I would've liked to further document the results, so I will be making quite a few more
-  changes to the report over the coming weeks.
-  
-  For the first part of the this week, I'm going to be focusing on the presentation I need to give. Will
-  and I need to redo the slides, considering how much has changed since the first presentation. In addition,
-  we still need to figure out how to do the backend issue tracker. I hope to sit down with the others to
-  figure out what we're going to do.
-  
-  Oh, and we need to do a code review on another project. That will take up a large amount of meeting time.
+	revisions to the proposal, as well as create a process for documenting initial results. I did not have
+	as much time as I would've liked to further document the results, so I will be making quite a few more
+	changes to the report over the coming weeks.
+
+	For the first part of the this week, I'm going to be focusing on the presentation I need to give. Will
+	and I need to redo the slides, considering how much has changed since the first presentation. In addition,
+	we still need to figure out how to do the backend issue tracker. I hope to sit down with the others to
+	figure out what we're going to do.
+
+	Oh, and we need to do a code review on another project. That will take up a large amount of meeting time.
 	
 NEXT WEEK'S GOALS
 	- Revise all written assignments (again), and improve the automated reports
 	- Sit down with team and hammer out code review of another project
 	- Finish presentation slides
-  - Backend...stuff
+ 	- Backend...stuff

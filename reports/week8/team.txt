@@ -1,0 +1,38 @@
+Christopher Addison (cjteam)
+William Cao (pastor13)
+David Dupre (djdupre)
+Jared Le (jaredtle)
+Christine Ta (cta95)
+
+Track Forever - Team Status Report (Week 8)
+
+Goals
+- List plans and goals as bullets, who’s responsible, rollover any tasks from last week that didn’t get completed
+- Add additional UI features such as a user settings page
+- Add email support for authentication feature
+- Implement the REST API for interfacing between the webapp and back end
+- Implement issue syncing and merging between frontend and backend  
+- Perform and record manual tests for issue conversion quality
+- Automate tests for other metrics (speed, browser support, etc.) 
+
+Progress
+We have finished adding email support for authentication. We also added a user settings page. As for the tests and 
+results, we’ve finished writing a python script that will automatically generate a LateX file containing the report. 
+As of now, the script only works for the most important metric, which is the conversion quality for each issue tracker. 
+During this week, we’ve also discovered some issues with rate limiting, specifically from GitHub. Unauthenticated users 
+are only allowed 60 requests per hour and authenticated users are allowed 5000. This is a problem if a user wanted to 
+import a very large project with over 5000 issues. We’ve also been fixing issues with importing issues from servers 
+correctly. For instance, Google Code was only importing a page of issues (up to 100 issues). Also, we realized that 
+GitHub was only importing open issues. Furthermore, we are trying to deal with problems importing from Redmine. We’re 
+currently in the process of migrating from Angular 5 to Angular 6, which might prove to be difficult since we have some 
+dependencies that rely on Angular 5. Hashing and Firebase hosting have also been added. A simple search and label filter 
+has been implemented in the web app as well.
+
+
+Week 8 goals
+- Automate tests for other metrics (speed, browser support, etc.) 
+- Clean up and create a consistent theme for the webapp
+- Implement the REST API, including sync feature
+- Make issues and projects mutable
+- Continue testing, polishing, and bug fixing
+

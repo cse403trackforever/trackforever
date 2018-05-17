@@ -1,0 +1,24 @@
+David Dupre (djdupre)
+CSE 403
+Individual Status Report
+5/14/18
+
+# Last Week's Goals
+- Evaluate the conversion quality from one of the supported issue trackers
+- Add exporting to JSON
+- Add mutability of issues
+
+# Progress
+I evaluated the conversion quality of the 'appscale' project from Google Code.
+I noticed many problems with the import process. For example, only one page of
+the Google Code project was being imported out of three. I fixed this error and
+some other bugs this week.
+  I did also add the export to JSON feature.
+  I did not add mutability yet because I was busy fixing bugs. The issues with
+GitHub Pages (our choice for deployment) have kept me especially busy. I'm
+considering switching our website hosting to another service.
+
+# Next Week's Goals
+- Add mutability of issues
+- Fix issues with deployment
+- Help create presentation slides

@@ -8,7 +8,7 @@
 
 [User manual](https://github.com/cse403trackforever/trackforever/blob/master/reports/week6/UserManual.md)
 
-[Demo](https://cse403trackforever.github.io/webapp/)
+[Demo](https://cse403trackforever.firebaseapp.com/)
 
 Clone repository and all submodules via:
 ```

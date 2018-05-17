@@ -6,3 +6,6 @@
 	path = webapp
 	url = https://github.com/cse403trackforever/webapp.git
 	branch = master
+[submodule "server2"]
+	path = server2
+	url = https://github.com/cse403trackforever/server2.git

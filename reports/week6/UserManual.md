@@ -32,7 +32,14 @@ Track Forever also supports first-class collaboration between developers through
 
 ### Getting Started
 
-#### Local Installation
+#### Visit the Web App
+
+The latest build of master is hosted at https://cse403trackforever.firebaseapp.com
+
+#### Running the Web App locally
+
+You can alternatively build the web app from source.
+
 Clone the repository and its sub-modules. The git command is:
 `git clone --recursive https://github.com/cse403trackforever/trackforever.git`
 
@@ -48,7 +55,7 @@ Open the web app in a browser by connecting to `https://localhost/4200`.
 - Sign into your Track Forever account
 - An account can be created using email, Facebook, or Github
 
-##### Configuring Your Profile
+##### Configuring Your Profile (NOT YET IMPLEMENTED)
 - A user may set their password, picture, and preferences
 - There will also be an option to enter the address for a Track Forever collaboration server
 - Make sure to claim GitHub, JIRA, etc. usernames in the *Profile* page.
@@ -64,17 +71,20 @@ Open the web app in a browser by connecting to `https://localhost/4200`.
 ##### Viewing a Project and Associated Issues
 - From the project list, select the relevant project
 - A *Project Details* page for the selected project will display a list of all of its issues
-- Filters can be applied to narrow down the list of issues
+- Filters and a search query can be applied to narrow down the list of issues
 
 ##### Viewing Details of an Issue
 - From the *Project Details* page, select the relevant issue
-- The *Issue Details* page will open, allowing the user to view and edit the issue
+- The *Issue Details* page will open, allowing the user to view and edit the issue (editing is not yet implemented)
 
 #### Offline Usage
-##### Downloading Issues for Offline Viewing
+
+Track Forever works offline. After visiting the site once, it can be visited again in the same browser with or without an internet connection.
+
+##### Downloading Issues for Offline Viewing (NOT YET IMPLEMENTED)
 - On the (top right?) there is a **Sync** button which synchronizes the the client with the state of the server and caches the issues for offline viewing. Any issues fetched while online will also be cached.
 
-##### Re-syncing Issues
+##### Re-syncing Issues (NOT YET IMPLEMENTED)
 - Once online again, the **Sync** button will synchronize the state between the client and the server.
 
 ### Compatible Issue Trackers

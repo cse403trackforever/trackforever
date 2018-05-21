@@ -1,0 +1,19 @@
+David Dupre (djdupre)
+CSE 403
+Individual Status Report
+5/21/18
+
+# Last Week's Goals
+- Add mutability of issues
+- Fix issues with deployment
+- Help create presentation slides
+
+# Progress
+I unfortunately did not make it to adding mutability of issues but instead worked on other features and bug fixes. I added search and label filtering to issues, fixed an error where the projects page was empty, improved the readability of Google Code issues, and migrated the web app from Angular 5 to Angular 6.
+  To help with deployment issues I decided to ditch GitHub Pages for Firebase hosting, which Chris set up. The switch solved some of our problems, but we're still having trouble with service workers for offline support. The update to Angular 6 was an unsuccessful to fix service workers, but did add some useful development features.
+  I gave feedback on the presentation practice but William, Jared, and Christine created all the slides themselves.
+
+# Next Week's Goals
+- Add mutability of issues
+- Refactor the import module into one submodule per supported issue tracker
+- Contribute to final report's lessons learned

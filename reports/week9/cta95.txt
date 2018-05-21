@@ -1,0 +1,20 @@
+Christine Ta (cta95)
+
+Individual status report week 9
+
+LAST WEEK'S GOALS
+	- Filtering feature
+	- Bug fixes
+	- Presentation slides
+	- Proposal
+
+PROGRESS
+Since the last report, I've assisted my team with revising our proposal, schedule,
+and preparing for our presentation. I've been out sick a majority of last week
+unfortunately, so I didn't get to do as much as I wanted to. Feeling a lot better
+and am hoping for a more productive upcoming week. 
+
+GOALS
+	- Proposal and deliverables
+	- Address code review and open issues
+	- Help with implementing remaining unfinished features

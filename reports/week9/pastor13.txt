@@ -1,0 +1,18 @@
+William Cao (pastor13)
+CSE 403
+Individual Status Report
+05-21-2018
+
+7th Week of Individual Status Reports
+
+
+For next week, we need to get the prototype for the offline portion working, which I plan on working on. Afterwards, I need to work on getting Redmine to import correctly (it sees the requests for the .json, but we aren't getting anything back).
+
+For this week, I have helped work on the report, refining the initial results section and addressing some of the feedback we have 
+received. I also did a code review for Test Bayes, providing them with some feedback regarding their project. I have started to look
+into how to implement the offline portion of our server, since we started from scratch. As of now, I am learning how to use Spring Boot
+alongside MongoDB to allow us to construct a response from the server for the different types of HTTP requests we receive from the 
+web app. Also, I am helping with addressing the feedback we received from the code review that was done.
+
+I look forward to setting up a server that is capable of responding to the web app, even if it is just a mock response this week. That 
+way, we can provide the web app some data to play around with.

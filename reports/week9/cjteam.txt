@@ -1,0 +1,24 @@
+Christopher Addison - cjteam
+
+Track Forever - Individual Status Report (Week 9)
+
+LAST WEEK'S GOALS
+    Finish tests for the revision system then merge final PR
+    Begin work on a merge ui for revisions
+    Fix mobile ui for the fontend
+    Ensure team remains consistent and on track
+    Help backend implement the API
+
+PROGRESS
+    The most important set of changes I made this week was in setting up the server2 project. The server2 will be a complete rewrite with some structure code copied over from the server project. As of right now I have managed to setup the gradle build system for the project and get the set of dependencies required for a simple example page to return some JSON. The next week will mostly be spent enhancing server2.
+    The final PR for the revision system has been merged in so the logic is no in place for the fontend to handle automatic syncing and merging. The manual merging UI is not yet under development.
+    I also went in and enhanced the decor of our webapp while I fixed some outstanding issues with usability on mobile. I made to sure to explain to the team what pitholes they fell into and how to avoid them such that mobile support will come naturally in the future.
+
+GOALS
+    Begin work on a merge ui for revisions
+    Ensure team remains consistent and on track
+    Help backend implement the API
+    Create a mock data stand in for backend to help fontend test
+    Start developing database and json parsing for the backend
+    Help frontend design ui and fix service workers
+    Add testing to server2

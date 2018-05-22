@@ -1,0 +1,24 @@
+Jared Le (jaredtle)
+Status Report Week 8
+2018-05-14
+
+LAST WEEK'S GOALS:
+	- Revise all written assignments (again), and improve the automated reports
+	- Sit down with team and hammer out code review of another project
+	- Finish presentation slides
+ 	- Backend...stuff
+
+PROGRESS:
+	We revised the proposal again, and based on feedback it seems to only require a few minor revisions as
+	of now, aside from the additional work that must be done for the coming weeks. We also need to reevaluate
+	some of the metrics, but that can wait until the project is closer to completion.
+
+	The presentation also went fairly well, and in the process the team had some nice discussion on what the features
+	are that we exactly plan to finish and what we plan to emphasize for our final project.
+	
+	In the coming week, we plan to do as much as possible on the backend server infrastructure. Hopefully I'll be able to
+	contribute more in this area.
+	
+NEXT WEEK'S GOALS
+	- Revise all written assignments, including final(?) revision of metrics
+	- Assist Will and Chris with implementation of backend server

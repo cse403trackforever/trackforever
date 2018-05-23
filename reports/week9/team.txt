@@ -1,0 +1,36 @@
+Christopher Addison (cjteam)
+William Cao (pastor13)
+David Dupre (djdupre)
+Jared Le (jaredtle)
+Christine Ta (cta95)
+
+Track Forever - Team Status Report (Week 9)
+
+Goals
+- Automate tests for other metrics (speed, browser support, etc.) 
+- Clean up and create a consistent theme for the webapp
+- Implement the REST API, including sync feature
+- Make issues and projects mutable
+- Continue testing, polishing, and bug fixing
+- Consider working on optimizations
+
+Progress
+This week, we have been working on addressing the feedback we have received from the other team. This included refactoring some code 
+such as changing some types, making fields optional, and reorganizing the structure of a package. Something that we accomplished that 
+we started from last week was our migration from Angular 5 to Angular 6. One of the driving forces behind this migration was a bug 
+related to Service Workers in Angular 5. Another thing is currently a work in progress is making issues and projects mutable. We have 
+also been working on the offline portion of the project. As of now, we have a prototype of the server that contains functions used to 
+interact with the data being sent from the web app. In addition to starting the server code, we have also added continuous integration 
+and coveralls to the server repository as well. Unfortunately because of how maps are dealt with when converting to JSON, we are trying 
+to figure out a good way to encode/decode to JSON between the web app and server.
+
+
+Week 9 goals
+- List plans and goals as bullets, who’s responsible, rollover any tasks from last week that didn’t get completed
+- Automate tests for other metrics (speed, browser support, etc.) 
+- Implement the REST API, including sync feature for collaboration via the new server2 project for the backend
+- Make issues and projects mutable
+- Continue testing, polishing, bug fixing
+- Rerun test suite, identify remaining bugs, add any additional tests
+- Draft final report
+- Begin measuring final performance statistics

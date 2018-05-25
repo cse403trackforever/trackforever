@@ -1,0 +1,484 @@
+\documentclass{article}
+%for graphics
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.10}
+
+%paragraph formatting
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+%table lists
+\usepackage{booktabs}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\usepackage{makecell}
+\renewcommand\theadalign{cl}
+\usepackage{adjustbox}
+
+
+
+\begin{document}
+	\begin{titlepage}
+		\title{Track Forever Results}
+		\date{\today}
+		\author{ Christopher Addison (cjteam) \\
+			William Cao (pastor13) \\
+			David Dupre (djdupre) \\
+			Jared Le (jaredtle) \\
+			Christine Ta (cta95) }
+		\maketitle
+	\end{titlepage}
+	
+	\section{Introduction}
+	The following report has been automatically generated. Its purpose is to provide 
+	illustrations of the effectiveness of Track Forever. In order to generate these results, 
+	several projects were selected from public issue trackers and imported into Track Forever. 
+	At this point, issues were manually evaluated according to the following rubric.
+	
+	\begin{adjustbox}{center}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabular}{ p{6cm} | c | l }
+			Test & Possible Points & Grading \\ \hline
+			Did the issue successfully import? & - &  
+			\makecell[{{p{4cm}}}]{
+				Pass/fail based on random sampling. If this fails, all other categories receive automatic zeroes. \\
+				CSV script accepts 0 for missing, 1 for present.} \\
+			\hline
+			\makecell[l]{
+				Was important information preserved? \\
+				\tabitem Time submitted/updated \\
+				\tabitem Labels, Status \\
+				\tabitem Comment/Summary field contents \\
+				\tabitem Hyperlinks, embedded objects}
+			& 4 & \makecell[{{p{4cm}}}]{Partial credit available based on fraction of information preserved. See items listed to the left. \\
+				One error in any category loses the whole point.
+			} \\
+			\hline
+			\makecell[l]{
+				Was user information preserved? \\
+				\tabitem Submitter/commenter IDs \\
+				\tabitem Assignee IDs
+			} & 2 & \makecell[{{p{4cm}}}]{
+				Partial credit, with 1 point for each bullet. One missing ID loses the whole point.
+			} \\
+			\hline
+			\makecell[{{p{6cm}}}]{
+				Are there any rendering errors on the webpage? \\
+				\tabitem No markdown/formatting errors \\
+				\tabitem No missing character symbols \\
+				\tabitem All elements resize properly
+			} & 3 & \makecell[{{p{4cm}}}]{
+				Partial credit, with 1 point for each bullet. One error in any category loses the whole point.
+			} \\
+			\hline
+			\makecell[{{p{6cm}}}]{
+				Are there any other pieces of information not preserved? \\
+				\tabitem Platform specific features \\
+				\tabitem Other minor information
+			} & 2 & \makecell[{{p{4cm}}}]{
+				Remove 1 point for every type of information not preserved, up to 2 points.
+			}
+		\end{tabular}
+	\end{adjustbox}
+	
+	This part must be done manually. Quality of the conversion is a measurement that only humans can make.
+	
+	For each issue evaluated, the results from the rubric were written into a CSV file. 
+	An automated script then tabulated the results and generated this report.
+	
+\pagebreak\section{Issue Tracker GitHub : Project Project 1}
+\textbf{Conversion Quality Test}\\
+\begin{adjustbox}{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{ p{6cm} | c | c }
+		Test & Possible Points & Grading \\ \hline
+		Did the issue successfully import? & - & 0.67 \\
+		\hline
+		\makecell[l]{
+			Was important information preserved? \\
+			\tabitem Time submitted/updated \\
+			\tabitem Labels, Status \\
+			\tabitem Comment/Summary field contents \\
+			\tabitem Hyperlinks, embedded objects}
+		& 4 & 2.67 \\
+		\hline
+		\makecell[l]{
+			Was user information preserved? \\
+			\tabitem Submitter/commenter IDs \\
+			\tabitem Assignee IDs
+		} & 2 & 1.33 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any rendering errors on the webpage? \\
+			\tabitem No markdown/formatting errors \\
+			\tabitem No missing character symbols \\
+			\tabitem All elements resize properly
+		} & 3 & 2.00 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any other pieces of information not preserved? \\
+			\tabitem Platform specific features \\
+			\tabitem Other minor information
+		} & 2 & 1.33 \\
+	\end{tabular}
+\end{adjustbox}
+\\
+\\Total issues examined: 9\\Final Score for issue tracker: 7.33 / 11.00 \\ \\\begin{adjustbox}{center}
+	\begin{tikzpicture}
+	\begin{axis}[
+	title={\textbf{Conversion Quality Graph}},
+	width=7in,
+	height=7in,
+	bar width=0.5in,
+	axis x line=center,
+	axis y line=left,
+	enlarge x limits,
+	ymin=0,
+	ymax=105,
+	restrict y to domain=0:100,
+	nodes near coords,
+	ylabel style={align=center},
+	ylabel={Percentage Correct},
+	x tick label style={font=\small,text width=1in,align=center},
+	symbolic x coords={Successful Import,Information Preservation,User Identification,Rendering Errors,Other Information Not Preserved},
+	xtick=data]
+	\addplot[ybar] coordinates {
+		(Successful Import,66.67)
+		(Information Preservation,66.67)
+		(User Identification,66.67)
+		(Rendering Errors,66.67)
+		(Other Information Not Preserved, 66.67)
+	};
+	\end{axis}
+	\end{tikzpicture} 
+\end{adjustbox}
+\\\section{Issue Tracker GitHub : Project Project 2}
+\textbf{Conversion Quality Test}\\
+\begin{adjustbox}{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{ p{6cm} | c | c }
+		Test & Possible Points & Grading \\ \hline
+		Did the issue successfully import? & - & 0.00 \\
+		\hline
+		\makecell[l]{
+			Was important information preserved? \\
+			\tabitem Time submitted/updated \\
+			\tabitem Labels, Status \\
+			\tabitem Comment/Summary field contents \\
+			\tabitem Hyperlinks, embedded objects}
+		& 4 & 0.00 \\
+		\hline
+		\makecell[l]{
+			Was user information preserved? \\
+			\tabitem Submitter/commenter IDs \\
+			\tabitem Assignee IDs
+		} & 2 & 0.00 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any rendering errors on the webpage? \\
+			\tabitem No markdown/formatting errors \\
+			\tabitem No missing character symbols \\
+			\tabitem All elements resize properly
+		} & 3 & 0.00 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any other pieces of information not preserved? \\
+			\tabitem Platform specific features \\
+			\tabitem Other minor information
+		} & 2 & 0.00 \\
+	\end{tabular}
+\end{adjustbox}
+\\
+\\Total issues examined: 9\\Final Score for issue tracker: 0.00 / 11.00 \\ \\\begin{adjustbox}{center}
+	\begin{tikzpicture}
+	\begin{axis}[
+	title={\textbf{Conversion Quality Graph}},
+	width=7in,
+	height=7in,
+	bar width=0.5in,
+	axis x line=center,
+	axis y line=left,
+	enlarge x limits,
+	ymin=0,
+	ymax=105,
+	restrict y to domain=0:100,
+	nodes near coords,
+	ylabel style={align=center},
+	ylabel={Percentage Correct},
+	x tick label style={font=\small,text width=1in,align=center},
+	symbolic x coords={Successful Import,Information Preservation,User Identification,Rendering Errors,Other Information Not Preserved},
+	xtick=data]
+	\addplot[ybar] coordinates {
+		(Successful Import,0.00)
+		(Information Preservation,0.00)
+		(User Identification,0.00)
+		(Rendering Errors,0.00)
+		(Other Information Not Preserved, 0.00)
+	};
+	\end{axis}
+	\end{tikzpicture} 
+\end{adjustbox}
+\\\section{Issue Tracker Google Code : Project Appscale}
+\textbf{Conversion Quality Test}\\
+\begin{adjustbox}{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{ p{6cm} | c | c }
+		Test & Possible Points & Grading \\ \hline
+		Did the issue successfully import? & - & 1.00 \\
+		\hline
+		\makecell[l]{
+			Was important information preserved? \\
+			\tabitem Time submitted/updated \\
+			\tabitem Labels, Status \\
+			\tabitem Comment/Summary field contents \\
+			\tabitem Hyperlinks, embedded objects}
+		& 4 & 2.83 \\
+		\hline
+		\makecell[l]{
+			Was user information preserved? \\
+			\tabitem Submitter/commenter IDs \\
+			\tabitem Assignee IDs
+		} & 2 & 1.00 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any rendering errors on the webpage? \\
+			\tabitem No markdown/formatting errors \\
+			\tabitem No missing character symbols \\
+			\tabitem All elements resize properly
+		} & 3 & 1.44 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any other pieces of information not preserved? \\
+			\tabitem Platform specific features \\
+			\tabitem Other minor information
+		} & 2 & 0.75 \\
+	\end{tabular}
+\end{adjustbox}
+\\
+\\Total issues examined: 36\\Final Score for issue tracker: 6.03 / 11.00 \\ \\\begin{adjustbox}{center}
+	\begin{tikzpicture}
+	\begin{axis}[
+	title={\textbf{Conversion Quality Graph}},
+	width=7in,
+	height=7in,
+	bar width=0.5in,
+	axis x line=center,
+	axis y line=left,
+	enlarge x limits,
+	ymin=0,
+	ymax=105,
+	restrict y to domain=0:100,
+	nodes near coords,
+	ylabel style={align=center},
+	ylabel={Percentage Correct},
+	x tick label style={font=\small,text width=1in,align=center},
+	symbolic x coords={Successful Import,Information Preservation,User Identification,Rendering Errors,Other Information Not Preserved},
+	xtick=data]
+	\addplot[ybar] coordinates {
+		(Successful Import,100.00)
+		(Information Preservation,70.83)
+		(User Identification,50.00)
+		(Rendering Errors,48.15)
+		(Other Information Not Preserved, 37.50)
+	};
+	\end{axis}
+	\end{tikzpicture} 
+\end{adjustbox}
+\\\section{Issue Tracker Google Code : Project Openbookproject}
+\textbf{Conversion Quality Test}\\
+\begin{adjustbox}{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{ p{6cm} | c | c }
+		Test & Possible Points & Grading \\ \hline
+		Did the issue successfully import? & - & 1.00 \\
+		\hline
+		\makecell[l]{
+			Was important information preserved? \\
+			\tabitem Time submitted/updated \\
+			\tabitem Labels, Status \\
+			\tabitem Comment/Summary field contents \\
+			\tabitem Hyperlinks, embedded objects}
+		& 4 & 2.70 \\
+		\hline
+		\makecell[l]{
+			Was user information preserved? \\
+			\tabitem Submitter/commenter IDs \\
+			\tabitem Assignee IDs
+		} & 2 & 1.00 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any rendering errors on the webpage? \\
+			\tabitem No markdown/formatting errors \\
+			\tabitem No missing character symbols \\
+			\tabitem All elements resize properly
+		} & 3 & 2.17 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any other pieces of information not preserved? \\
+			\tabitem Platform specific features \\
+			\tabitem Other minor information
+		} & 2 & 0.96 \\
+	\end{tabular}
+\end{adjustbox}
+\\
+\\Total issues examined: 89\\Final Score for issue tracker: 6.82 / 11.00 \\ \\\begin{adjustbox}{center}
+	\begin{tikzpicture}
+	\begin{axis}[
+	title={\textbf{Conversion Quality Graph}},
+	width=7in,
+	height=7in,
+	bar width=0.5in,
+	axis x line=center,
+	axis y line=left,
+	enlarge x limits,
+	ymin=0,
+	ymax=105,
+	restrict y to domain=0:100,
+	nodes near coords,
+	ylabel style={align=center},
+	ylabel={Percentage Correct},
+	x tick label style={font=\small,text width=1in,align=center},
+	symbolic x coords={Successful Import,Information Preservation,User Identification,Rendering Errors,Other Information Not Preserved},
+	xtick=data]
+	\addplot[ybar] coordinates {
+		(Successful Import,100.00)
+		(Information Preservation,67.42)
+		(User Identification,50.00)
+		(Rendering Errors,72.28)
+		(Other Information Not Preserved, 47.75)
+	};
+	\end{axis}
+	\end{tikzpicture} 
+\end{adjustbox}
+\\\section{Issue Tracker Redmine : Project Project 1}
+\textbf{Conversion Quality Test}\\
+\begin{adjustbox}{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{ p{6cm} | c | c }
+		Test & Possible Points & Grading \\ \hline
+		Did the issue successfully import? & - & 1.00 \\
+		\hline
+		\makecell[l]{
+			Was important information preserved? \\
+			\tabitem Time submitted/updated \\
+			\tabitem Labels, Status \\
+			\tabitem Comment/Summary field contents \\
+			\tabitem Hyperlinks, embedded objects}
+		& 4 & 4.00 \\
+		\hline
+		\makecell[l]{
+			Was user information preserved? \\
+			\tabitem Submitter/commenter IDs \\
+			\tabitem Assignee IDs
+		} & 2 & 2.00 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any rendering errors on the webpage? \\
+			\tabitem No markdown/formatting errors \\
+			\tabitem No missing character symbols \\
+			\tabitem All elements resize properly
+		} & 3 & 3.00 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any other pieces of information not preserved? \\
+			\tabitem Platform specific features \\
+			\tabitem Other minor information
+		} & 2 & 2.00 \\
+	\end{tabular}
+\end{adjustbox}
+\\
+\\Total issues examined: 9\\Final Score for issue tracker: 11.00 / 11.00 \\ \\\begin{adjustbox}{center}
+	\begin{tikzpicture}
+	\begin{axis}[
+	title={\textbf{Conversion Quality Graph}},
+	width=7in,
+	height=7in,
+	bar width=0.5in,
+	axis x line=center,
+	axis y line=left,
+	enlarge x limits,
+	ymin=0,
+	ymax=105,
+	restrict y to domain=0:100,
+	nodes near coords,
+	ylabel style={align=center},
+	ylabel={Percentage Correct},
+	x tick label style={font=\small,text width=1in,align=center},
+	symbolic x coords={Successful Import,Information Preservation,User Identification,Rendering Errors,Other Information Not Preserved},
+	xtick=data]
+	\addplot[ybar] coordinates {
+		(Successful Import,100.00)
+		(Information Preservation,100.00)
+		(User Identification,100.00)
+		(Rendering Errors,100.00)
+		(Other Information Not Preserved, 100.00)
+	};
+	\end{axis}
+	\end{tikzpicture} 
+\end{adjustbox}
+\\\section{Issue Tracker Redmine : Project Project 2}
+\textbf{Conversion Quality Test}\\
+\begin{adjustbox}{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{ p{6cm} | c | c }
+		Test & Possible Points & Grading \\ \hline
+		Did the issue successfully import? & - & 0.00 \\
+		\hline
+		\makecell[l]{
+			Was important information preserved? \\
+			\tabitem Time submitted/updated \\
+			\tabitem Labels, Status \\
+			\tabitem Comment/Summary field contents \\
+			\tabitem Hyperlinks, embedded objects}
+		& 4 & 0.00 \\
+		\hline
+		\makecell[l]{
+			Was user information preserved? \\
+			\tabitem Submitter/commenter IDs \\
+			\tabitem Assignee IDs
+		} & 2 & 0.00 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any rendering errors on the webpage? \\
+			\tabitem No markdown/formatting errors \\
+			\tabitem No missing character symbols \\
+			\tabitem All elements resize properly
+		} & 3 & 0.00 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any other pieces of information not preserved? \\
+			\tabitem Platform specific features \\
+			\tabitem Other minor information
+		} & 2 & 0.00 \\
+	\end{tabular}
+\end{adjustbox}
+\\
+\\Total issues examined: 9\\Final Score for issue tracker: 0.00 / 11.00 \\ \\\begin{adjustbox}{center}
+	\begin{tikzpicture}
+	\begin{axis}[
+	title={\textbf{Conversion Quality Graph}},
+	width=7in,
+	height=7in,
+	bar width=0.5in,
+	axis x line=center,
+	axis y line=left,
+	enlarge x limits,
+	ymin=0,
+	ymax=105,
+	restrict y to domain=0:100,
+	nodes near coords,
+	ylabel style={align=center},
+	ylabel={Percentage Correct},
+	x tick label style={font=\small,text width=1in,align=center},
+	symbolic x coords={Successful Import,Information Preservation,User Identification,Rendering Errors,Other Information Not Preserved},
+	xtick=data]
+	\addplot[ybar] coordinates {
+		(Successful Import,0.00)
+		(Information Preservation,0.00)
+		(User Identification,0.00)
+		(Rendering Errors,0.00)
+		(Other Information Not Preserved, 0.00)
+	};
+	\end{axis}
+	\end{tikzpicture} 
+\end{adjustbox}
+\\\end{document}

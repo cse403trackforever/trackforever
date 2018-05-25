@@ -2,29 +2,18 @@ import os
 import glob
 from pathlib import Path
 
+# I'm sorry for using globals. I regret everything.
 issues             = []
 issue_scores       = []
 category_scores    = []
 relative_file_path = []
-weights            = [2, 1, 1, 1]
-
-# ID,Test1Grade,Test2Grade,Test3Grade,Test4Grade,Test5Grade...
-# print(glob.glob('*.csv'))
-
-def debug():
-	print('Results:')
-	print('Issue IDs (unordered): {0}'.format(issues))
-	print('Issue Scores: {0}'.format(issue_scores))
-	print('Total Score: {0}'.format(sum(issue_scores)))
-	print('Score For Each Category'.format(category_scores))
-	print('Final result: {0} / {1}'.format(sum(issue_scores) / len(issues), len(category_scores) + 1))
+points             = [1, 4, 2, 3, 2]
+weights            = [0, 1, 1, 1, 1]
 
 def set_relative_path(relative_path):
 	global relative_file_path
 	relative_file_path = os.path.join(*relative_path)
 	relative_file_path = glob.glob(relative_file_path + '/*.csv')
-	# global relative_file_path
-	# relative_file_path = list(Path(relative_path).glob('*.csv'))
 
 def calculate():
 	# print(relative_file_path)
@@ -55,49 +44,82 @@ def calculate():
 
 def get_table(issue_tracker_name, project_name):
 	final_sum = 0
+	max_score = 0
 	for i in range(len(category_scores)):
 		final_sum += category_scores[i] * weights[i]
+	for i in range(len(points)):
+		max_score += points[i] * weights[i]
 	texTable = ['\\section{{Issue Tracker {0} : Project {1}}}\n'.format(issue_tracker_name, project_name), 
-	'\\textbf{Conversion Quality Test}\n', 
-	'\\begin{center}\n', 
+	'\\textbf{Conversion Quality Test}\\\\\n', 
+	'\\begin{adjustbox}{center}\n', 
 	'\t\\renewcommand{\\arraystretch}{1.5}\n', 
-	'\t\\begin{tabular}{ p{6cm} | c | l }\n', 
-	'\t\tTest & Weight & Pass/Fail \\\\ \\hline\n', 
-	'\t\tWas important information preserved (Not including user information)? & 2 & {0:.2f} \\\\\n'.format(category_scores[0] / len(issues)), 
-	'\t\tAre there any visible errors in the final converted text? & 1 & {0:.2f} \\\\\n'.format(category_scores[1] / len(issues)), 
-	'\t\tCan the submitter, commenter, and assignees all be identified (if they exist)? & 1 & {0:.2f} \\\\\n'.format(category_scores[2] / len(issues)), 
-	'\t\tIs the issue readable? & 1 & {0:.2f} \\\\\n'.format(category_scores[3] / len(issues)), 
+	'\t\\begin{tabular}{ p{6cm} | c | c }\n', 
+	'\t\tTest & Possible Points & Grading \\\\ \\hline\n', 
+	'\t\tDid the issue successfully import? & - & {0:.2f} \\\\\n'.format(category_scores[0] / len(issues)), 
+	'\t\t\\hline\n', '\t\t\\makecell[l]{\n', 
+	'\t\t\tWas important information preserved? \\\\\n', 
+	'\t\t\t\\tabitem Time submitted/updated \\\\\n', 
+	'\t\t\t\\tabitem Labels, Status \\\\\n', 
+	'\t\t\t\\tabitem Comment/Summary field contents \\\\\n', 
+	'\t\t\t\\tabitem Hyperlinks, embedded objects}\n', 
+	'\t\t& 4 & {0:.2f} \\\\\n'.format(category_scores[1] / len(issues)), 
+	'\t\t\\hline\n', 
+	'\t\t\\makecell[l]{\n', 
+	'\t\t\tWas user information preserved? \\\\\n', 
+	'\t\t\t\\tabitem Submitter/commenter IDs \\\\\n', 
+	'\t\t\t\\tabitem Assignee IDs\n', 
+	'\t\t}} & 2 & {0:.2f} \\\\\n'.format(category_scores[2] / len(issues)), 
+	'\t\t\\hline\n', 
+	'\t\t\\makecell[{{p{6cm}}}]{\n', 
+	'\t\t\tAre there any rendering errors on the webpage? \\\\\n', 
+	'\t\t\t\\tabitem No markdown/formatting errors \\\\\n', 
+	'\t\t\t\\tabitem No missing character symbols \\\\\n', 
+	'\t\t\t\\tabitem All elements resize properly\n', 
+	'\t\t}} & 3 & {0:.2f} \\\\\n'.format(category_scores[3] / len(issues)), 
+	'\t\t\\hline\n', 
+	'\t\t\\makecell[{{p{6cm}}}]{\n', 
+	'\t\t\tAre there any other pieces of information not preserved? \\\\\n', 
+	'\t\t\t\\tabitem Platform specific features \\\\\n', 
+	'\t\t\t\\tabitem Other minor information\n', 
+	'\t\t}} & 2 & {0:.2f} \\\\\n'.format(category_scores[4] / len(issues)), 
 	'\t\\end{tabular}\n', 
-	'\\end{center}\n', 
-	'Total number of issues examined: {0} \\\\'.format(len(issues)),
-	'Final Score for issue tracker: {0:.2f} / {1:.2f} \\\\ \\\\'.format(final_sum / len(issues), sum(weights))]
+	'\\end{adjustbox}\n', 
+	'\\\\\n',
+	'\\\\Total issues examined: {0}'.format(len(issues)), 
+	'\\\\Final Score for issue tracker: {0:.2f} / {1:.2f} \\\\ \\\\'.format(final_sum / len(issues), max_score)]
 	return texTable
 
 def get_graph():
-	texGraph = ['\t\\begin{tikzpicture}\n', 
+	texGraph = ['\\begin{adjustbox}{center}\n', 
+	'\t\\begin{tikzpicture}\n', 
 	'\t\\begin{axis}[\n', 
-	'\twidth=5in,\n', 
-	'\theight=3in,\n', 
-	'\tbar width=0.5in,\n',
+	'\ttitle={\\textbf{Conversion Quality Graph}},\n', 
+	'\twidth=7in,\n', 
+	'\theight=7in,\n', 
+	'\tbar width=0.5in,\n', 
 	'\taxis x line=center,\n', 
 	'\taxis y line=left,\n', 
-	'\tenlargelimits=true,\n', 
+	'\tenlarge x limits,\n', 
 	'\tymin=0,\n', 
-	'\tymax=100,\n', 
+	'\tymax=105,\n', 
+	'\trestrict y to domain=0:100,\n', 
 	'\tnodes near coords,\n', 
 	'\tylabel style={align=center},\n', 
 	'\tylabel={Percentage Correct},\n', 
 	'\tx tick label style={font=\\small,text width=1in,align=center},\n', 
-	'\tsymbolic x coords={Information Preservation,Visible Errors,User Identification,Readability},\n', 
+	'\tsymbolic x coords={Successful Import,Information Preservation,User Identification,Rendering Errors,Other Information Not Preserved},\n', 
 	'\txtick=data]\n', 
 	'\t\\addplot[ybar] coordinates {\n', 
-	'\t\t(Information Preservation,{0:.2f})\n'.format(100 * category_scores[0] / len(issues)), 
-	'\t\t(Visible Errors,{0:.2f})\n'.format(100 * category_scores[1] / len(issues)), 
-	'\t\t(User Identification,{0:.2f})\n'.format(100 * category_scores[2] / len(issues)), 
-	'\t\t(Readability,{0:.2f})\n'.format(100 * category_scores[3] / len(issues)), 
+	'\t\t(Successful Import,{0:.2f})\n'.format(100 * category_scores[0] / points[0] / len(issues)), 
+	'\t\t(Information Preservation,{0:.2f})\n'.format(100 * category_scores[1] / points[1] / len(issues)), 
+	'\t\t(User Identification,{0:.2f})\n'.format(100 * category_scores[2] / points[2] / len(issues)), 
+	'\t\t(Rendering Errors,{0:.2f})\n'.format(100 * category_scores[3] / points[3] / len(issues)), 
+	'\t\t(Other Information Not Preserved, {0:.2f})\n'.format(100 * category_scores[4] / points[4] / len(issues)), 
 	'\t};\n', 
 	'\t\\end{axis}\n', 
-	'\t\\end{tikzpicture}']
+	'\t\\end{tikzpicture} \n', 
+	'\\end{adjustbox}\n', 
+	'\\\\']
 	return texGraph
 
 def reset():
@@ -106,8 +128,3 @@ def reset():
 	category_scores.clear()
 	global relative_file_path
 	relative_file_path = []
-
-# calculate()
-# debug()
-# print(get_table('Google Code', 'spectacular'))
-# print(get_graph())

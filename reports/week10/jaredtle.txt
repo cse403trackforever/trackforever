@@ -1,0 +1,19 @@
+Jared Le (jaredtle)
+Status Report Week 10
+2018-05-28
+
+LAST WEEK'S GOALS:
+	- Revise all written assignments, including final(?) revision of metrics
+	- Assist Will and Chris with implementation of backend server
+
+PROGRESS:
+	We revised the proposal again, but evidently much more revision is required. The team, myself included, did not
+	quite grasp the depth of changes that had to be made for the final draft. I'll be going through the proposal again
+	to further revise it, making much more drastic changes. If time permits, I'll be able to get a revision to the TA
+	before the next draft is due.
+
+	Presentation are also coming up soon. It'll be Chris and someone else presenting, but I will be assist with preparing
+	the final slides and helping Chris rehearse, so that he can focus on other things.
+	
+NEXT WEEK'S GOALS
+	- Do as much work as possible on report and presentation slides to make sure others have time to do other work

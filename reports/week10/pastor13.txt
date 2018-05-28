@@ -1,0 +1,20 @@
+William Cao (pastor13)
+CSE 403
+Individual Status Report
+05-28-2018
+
+8th Week of Individual Status Reports
+
+
+I look forward to setting up a server that is capable of responding to the web app, even if it is just a mock response this week. That 
+way, we can provide the web app some data to play around with.
+
+This week, I helped getting our final report done. I worked with the team to determine stricter grading guidelines when looking at issues
+imported by our issue tracker. Also, I updated the script that automatically generates the report to accomodate for the changes made in
+the table. Furthermore, we've decided to add the little user information we get from Google Code when importing, which allows us to make
+a generalized rubric for all issue trackers, since it added some unnecessary confusion. Meanwhile, I was working on the server and set up
+the backbone for the server. As of now, I am writing tests for the server and also attempting to fix the a bug when we try to store some
+projects on the server.
+
+Until next week, I need to focus on finishing up the server and continue working on the evaluation of our project, as it was lacking this
+week. I will also look to begin preparing for the final presentation that we have on finals week.

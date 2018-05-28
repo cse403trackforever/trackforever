@@ -1,0 +1,27 @@
+David Dupre (djdupre)
+CSE 403
+Individual Status Report
+5/28/18
+
+# Last Week's Goals
+- Add mutability of issues
+- Refactor the import module into one submodule per supported issue tracker
+- Contribute to final report's lessons learned
+
+# Progress
+I finally added the editability of issues and projects. There are still some
+issues with the server-client interface, but now the web app is at least as
+powerful as TaskWarrior for our purposes.
+  I did refactor the import module. I also refactored parts of the
+authentication module and added auth guards so only signed-in users can access
+most of the website.
+  I also re-evaluated an imported Google Code project for the final report
+draft and fixed some parts of the importer that were graded poorly during the
+evaluation.
+
+# Next Week's Goals
+- Fix bugs that are weakening the evaluation, specifically GitHub API rate
+  limiting
+- Update the report to include more recent work
+- Create a contributing guide with emphasis on importing from other issue
+  trackers

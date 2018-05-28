@@ -1,0 +1,24 @@
+Christopher Addison - cjteam
+
+Track Forever - Individual Status Report (Week 10)
+
+LAST WEEK'S GOALS
+    Begin work on a merge ui for revisions
+    Ensure team remains consistent and on track
+    Help backend implement the API
+    Create a mock data stand in for backend to help fontend test
+    Start developing database and json parsing for the backend
+    Help frontend design ui and fix service workers
+    Add testing to server2
+
+PROGRESS
+    The most important set of changes I made this week was in fixing various issues between server2 and the webapp in regards to the commuication between the two and bugs that didn't appear until we tested them outside of our spoofed network frameworks. Currently, the sync gets as far as sending projects to the server to be update before an error occurs.
+    Other changes I've made are ui improvements and completing the move from rxjs 5 to 6, which was causing us issues as they changed the entire structure of the library. The conflicting framework usages and the fact rxjs-compat had a number of game breaking bugs meant we had to fully migrate.
+    I've been working with both William and David to keep things on track and ensure the server and client will interoperate correctly.
+
+GOALS
+    Begin work on a merge ui for revisions
+    Ensure team remains consistent and on track
+    Help frontend design ui and fix service workers
+    Work on bug fixes for webap and sever communication
+    Write more tests for server2

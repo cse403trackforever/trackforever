@@ -1,0 +1,20 @@
+Christine Ta (cta95)
+
+Individual status report week 10
+
+LAST WEEK'S GOALS
+	- Proposal and deliverables
+	- Filtering feature
+	- Bug fixes
+
+PROGRESS
+Since the last report, I've assisted my team with revising our proposal and schedule.
+I also wrapped up the filtering feature that David started. This includes being able
+to filter issues by status, labels, assignees, etc. I also made some UI changes for
+the list of issues. This week, I'll be helping my team with any front end implementation
+that's needed and assist with the final report.
+
+GOALS
+	- Help with final report
+	- Help with remaining issues and unfinished features
+	- Help with bug fixes and UI changes

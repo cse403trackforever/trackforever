@@ -75,7 +75,7 @@ Open the web app in a browser by connecting to `https://localhost/4200`.
 
 ##### Viewing Details of an Issue
 - From the *Project Details* page, select the relevant issue
-- The *Issue Details* page will open, allowing the user to view and edit the issue (editing is not yet implemented)
+- The *Issue Details* page will open, allowing the user to view and edit the issue
 
 #### Offline Usage
 

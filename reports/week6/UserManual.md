@@ -127,7 +127,7 @@ Track Forever was made with compatibility and extensibility in mind. Therefore, 
 
 To create a user interface, use the REST API, documented [here](https://github.com/cse403trackforever/trackforever/wiki/RESTful-API-Specification)
 
-To create a new import/export module, follow the guide [here](https://guide.com)
+To create a new import/export module, follow the guide [here](https://github.com/cse403trackforever/trackforever/wiki/Extending-the-import-module)
 
 
 

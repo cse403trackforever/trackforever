@@ -1,0 +1,37 @@
+Christopher Addison (cjteam)
+William Cao (pastor13)
+David Dupre (djdupre)
+Jared Le (jaredtle)
+Christine Ta (cta95)
+
+Track Forever - Team Status Report (Week 10)
+
+Goals
+- Automate tests for other metrics (speed, browser support, etc.) 
+- Implement the REST API, including sync feature for collaboration via the new server2 project for the backend
+- Make issues and projects mutable
+- Continue testing, polishing, bug fixing
+- Rerun test suite, identify remaining bugs, add any additional tests
+- Draft final report
+
+Progress
+
+For this week, many advancements in our project were made. On the server side of things, we refactored some of the types used in the models used (e.g. 
+Arrays to Lists) and added responses to requests that did not completely fail (e.g. a request for a list of issues  where only some were found). We also 
+ran into the cross-origins issue again when dealing with our server, so we had to implement a fix for that as well. Then, we changed the way we 
+interpreted the request to a generic JSON string on the server end to give us greater control of parsing the received information. The server is now 
+capable of providing responses to requests made by the web app. As of now, we are working on improving the communication portion between the client and 
+server. On the web app half of the project, we fixed some issues, which includes fixing Google Code dates, GitHub importing only open issues, and 
+Redmine import issues. We also made strides to making issues and projects editable. More filtering options were added to allow the user to narrow down 
+issues. Data for each user is now stored separately. Due to poorer metrics when evaluating Google Code, we decided to roll back some of the changes made 
+to the way we interpret Google Code projects. Currently, we are working on getting GitHub OAuth to work, which will enable us to overcome the GitHub 
+rate limiting issue that we are experiencing. In addition, we are now using Lighthouse by Google to evaluate the quality of our web app. The reports 
+from Lighthouse are also allowing us to find and fix various visual and functional flaws in the webapp.
+
+
+Week 10 goals
+- List plans and goals as bullets, who’s responsible, rollover any tasks from last week that didn’t get completed
+- Conduct a final code review (alongside the ones we’ve been doing)
+- Finish final report (proj10b)
+- Finish final presentation slides
+- Ensure our project is demo-able for the final presentation and get screenshots of the PWA on mobile and desktop

@@ -24,8 +24,7 @@ def scoreGoogleCode(tex_document, relative_path, issue_tracker_name, project_nam
 		tex_document += code_score.get_graph()
 		code_score.reset()
 
-scoreGeneric(texdoc, ['GitHub', 'Project 1'], 'GitHub', 'Project 1')
-scoreGeneric(texdoc, ['GitHub', 'Project 2'], 'GitHub', 'Project 2')
+scoreGeneric(texdoc, ['GitHub', 'Microsoft Dotnet'], 'GitHub', 'Microsoft Dotnet')
 scoreGeneric(texdoc, ['Google Code', 'Appscale'], 'Google Code', 'Appscale')
 scoreGeneric(texdoc, ['Google Code', 'Openbookproject'], 'Google Code', 'Openbookproject')
 scoreGeneric(texdoc, ['Redmine', 'Project 1'], 'Redmine', 'Project 1')

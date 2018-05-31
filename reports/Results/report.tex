@@ -151,6 +151,72 @@
 	\end{axis}
 	\end{tikzpicture} 
 \end{adjustbox}
+\\\section{Issue Tracker GitHub : Project Defects4J}
+\textbf{Conversion Quality Test}\\
+\begin{adjustbox}{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{ p{6cm} | c | c }
+		Test & Possible Points & Grading \\ \hline
+		Did the issue successfully import? & - & 1.00 \\
+		\hline
+		\makecell[l]{
+			Was important information preserved? \\
+			\tabitem Time submitted/updated \\
+			\tabitem Labels, Status \\
+			\tabitem Comment/Summary field contents \\
+			\tabitem Hyperlinks, embedded objects}
+		& 4 & 4.00 \\
+		\hline
+		\makecell[l]{
+			Was user information preserved? \\
+			\tabitem Submitter/commenter IDs \\
+			\tabitem Assignee IDs
+		} & 2 & 2.00 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any rendering errors on the webpage? \\
+			\tabitem No markdown/formatting errors \\
+			\tabitem No missing character symbols \\
+			\tabitem All elements resize properly
+		} & 3 & 2.44 \\
+		\hline
+		\makecell[{{p{6cm}}}]{
+			Are there any other pieces of information not preserved? \\
+			\tabitem Platform specific features \\
+			\tabitem Other minor information
+		} & 2 & 0.46 \\
+	\end{tabular}
+\end{adjustbox}
+\\
+\\Total issues examined: 52\\Final Score for issue tracker: 8.90 / 11.00 \\ \\\begin{adjustbox}{center}
+	\begin{tikzpicture}
+	\begin{axis}[
+	title={\textbf{Conversion Quality Graph}},
+	width=7in,
+	height=7in,
+	bar width=0.5in,
+	axis x line=center,
+	axis y line=left,
+	enlarge x limits,
+	ymin=0,
+	ymax=105,
+	restrict y to domain=0:100,
+	nodes near coords,
+	ylabel style={align=center},
+	ylabel={Percentage Correct},
+	x tick label style={font=\small,text width=1in,align=center},
+	symbolic x coords={Successful Import,Information Preservation,User Identification,Rendering Errors,Other Information Not Preserved},
+	xtick=data]
+	\addplot[ybar] coordinates {
+		(Successful Import,100.00)
+		(Information Preservation,100.00)
+		(User Identification,100.00)
+		(Rendering Errors,81.41)
+		(Other Information Not Preserved, 23.08)
+	};
+	\end{axis}
+	\end{tikzpicture} 
+\end{adjustbox}
 \\\section{Issue Tracker Google Code : Project Appscale}
 \textbf{Conversion Quality Test}\\
 \begin{adjustbox}{center}

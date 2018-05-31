@@ -32,6 +32,31 @@ Once issues for a particular project have been converted, they must be manually 
 
 If the issue was not imported at all, all values should be set to 0.
 
+**For greater detail on how to manually evaluate each subcategory, please refer to [this document](./report.pdf).**
+A list of all the projects evaluated and the fields used to import the project on the web application: <br>
+**NOTE: For GitHub, make sure you search for all issues because the default only displays open issues!**
+* **GitHub**
+  - [Defects4J](https://github.com/rjust/defects4j/issues)
+    - Owner: ```rjust```
+    - Project Name: ```defects4j```
+  - [Microsoft DotNet](https://github.com/Microsoft/dotnet/issues)
+    - Owner: ```Microsoft```
+    - Project Name: ```dotnet```
+* **Google Code**
+  - [Appscale](https://code.google.com/archive/p/appscale/issues)
+    - Project Name: ```appscale```
+  - [Openbookproject](https://code.google.com/archive/p/openbookproject/issues)
+    - Project Name: ```openbookproject```
+* **Redmine**
+  - [Test Credit System](http://www.hostedredmine.com/projects/test-credit-system)
+    - Server URL: ```http://www.hostedredmine.com```
+    - Project Name: ```test-credit-system```
+    - Project ID: ```1869```
+  - [Operation Authority](http://www.hostedredmine.com/projects/operation-authority)
+    - Server URL: ```http://www.hostedredmine.com```
+    - Project Name: ```operation-authority```
+    - Project ID: ```31998```
+
 These numbers, along with the ID number for the issue they are associated with, are entered into a CSV file in the order listed above. For example:
 
 > 234,1,4,2,3,2
